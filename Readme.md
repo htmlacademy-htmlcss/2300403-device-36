@@ -1,6 +1,6 @@
 # Личный проект «Девайс»
 
-- Студент: [Юрий Кириллов](https://up.htmlacademy.ru/htmlcss/36/user/2300403).
+- Студент: [Неопознанный енот](https://up.htmlacademy.ru/htmlcss/36/user/2300403).
 - Наставник: [Александр Румянцев](https://htmlacademy.ru/profile/id1521451).
 
 ---
