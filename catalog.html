@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Девайс</title>
+  </head>
+  <body>
+    <!-- Шапка страницы -->
+    <header class="page-header">
+      <!-- Логотип шапки -->
+      <h1 class="visually-hidden">Интернет-магазин «Девайс»</h1>
+      <a class="header-link" href="/index.html"><img class="header-logo" src="#" alt="Логотип «Девайс»"></a>
+      <!-- Блок навигации -->
+      <nav class="navigation">
+        <!-- Блок поиска в шапке         -->
+        <section class="navigation-search">
+          <img class="search-img" src="#" alt="Лупа">
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <input class="search-field" type="text" placeholder="Текст поиска" name="search">
+            <button class="search-button" type="submit">Найти</button>
+          </form>
+        </section>
+        <!-- Ссылки навигации шапки         -->
+        <ul class="navigation-links-list">
+          <li class="navigation-links-item"><a href="#"><img class="navigation-links-img" src="#" alt="">Коля Петухов</a></li>
+          <li class="navigation-links-item"><a href="#">Выйти</a></li>
+          <li class="navigation-links-item"><a href="#"><img class="navigation-links-img" src="#" alt="">Сравнить</a></li>
+          <li class="navigation-links-item"><button class="navigation-links-button"><img class="navigation-links-img"  src="#" alt="">Корзина</button></li>
+        </ul>
+        <!-- Выпадающий список категорий         -->
+        <section class="navigation-dropdown">
+          <button class="navigation-dropdown-button">Каталог товаров</button>
+          <img class="navigation-dropdown-img" src="#" alt="Кнопка раскрытия каталога">
+          <ul class="navigation-dropdown-list">
+            <li class="navigation-dropdown-item"><a class="navigation-dropdown-link" href="#">Виртуальная реальность</a></li>
+            <li class="navigation-dropdown-item"><a class="navigation-dropdown-link" href="#">Моноподы для селфи</a></li>
+            <li class="navigation-dropdown-item"><a class="navigation-dropdown-link" href="#">Экшн-камеры</a></li>
+            <li class="navigation-dropdown-item"><a class="navigation-dropdown-link" href="#">Фитнес-браслеты</a></li>
+            <li class="navigation-dropdown-item"><a class="navigation-dropdown-link" href="#">Умные часы</a></li>
+            <li class="navigation-dropdown-item"><a class="navigation-dropdown-link" href="#">Квадракоптеры</a></li>
+          </ul>
+        </section>
+        <!-- Ссылки навигации шапки         -->
+        <ul class="navigation-advantages-list">
+          <li class="navigation-advantages-item"><a class="navigation-advantages-link" href="#">Доставка</a></li>
+          <li class="navigation-advantages-item">Гарантия</li>
+          <li class="navigation-advantages-item">Контакты</li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Основное содержание страницы -->
+    <main class="main-catalog">
+      <!-- Блок названия страницы и хелбных крошек -->
+      <section class="breadcrumbs">
+        <h2 class="breadcrumbs-title">Моноподы для селфи</h2>
+        <ol class="breadcrumbs-list">
+          <li class="breadcrumbs-item"><a href="#">Главная</a><img class="breadcrumbs-img" src="#" alt=""></li>
+          <li class="breadcrumbs-item"><a href="#">Каталог товаров</a><img class="breadcrumbs-img" src="#" alt=""></li>
+          <li class="breadcrumbs-item"><a href="#">Моноподы для селфи</a><img class="breadcrumbs-img" src="#" alt=""></li>
+        </ol>
+      </section>
+      <!-- Блок боковой панели, фильтр -->
+      <aside class="catalog-aside">
+        <form class="catalog-aside-form" action="https://echo.htmlacademy.ru/" method="post">
+          <h2 class="aside-title">фильтр:</h2>
+          <!-- Блок выбора диапазона цены -->
+          <div class="aside-price">
+            <label for="price">Стоимость</label>
+            0 <input type="range" id="price" name="price" min="0" max="5000" step="1"> 5000
+          </div>
+          <!-- Блок выбора цвета чекбоксами -->
+          <div class="aside-color">
+            <h3 class="aside-color-title">Цвет</h3>
+            <label><input type="checkbox" name="aside-color-black" id="aside-color-black" checked>
+            Черный</label><br>
+            <label><input type="checkbox" name="aside-color-white" id="aside-color-white" checked>
+            Белый</label><br>
+            <label><input type="checkbox" name="aside-color-blue" id="aside-color-blue">
+            Синий</label><br>
+            <label><input type="checkbox" name="aside-color-red" id="aside-color-red">
+            Красный</label><br>
+            <label><input type="checkbox" name="aside-color-pink" id="aside-color-pink">
+            Розовый</label>
+          </div>
+          <!-- Блок выбора Bluetooth радиокнопкой -->
+          <div class="aside-bluetooth">
+            <h3 class="aside-bluetooth-title">Bluetooth</h3>
+            <label>
+              <input type="radio" name="bluetooth" value="Есть" checked>Есть
+            </label><br>
+            <label>
+              <input type="radio" name="bluetooth" value="Нет">Нет
+            </label>
+          </div>
+          <!-- Кнопка применения фильтров -->
+          <div class="aside-button">
+            <input type="submit" value="Показать">
+          </div>
+        </form>
+      </aside>
+      <section class="main-goods">
+        <!-- Блок сортировки над списком товаров -->
+        <header class="goods-header">
+          <h2 class="goods-header-title">сортировка:</h2>
+          <form class="goods-sorting-form" action="https://echo.htmlacademy.ru/" method="post">
+            <select class="goods-sorting-select" name="goods-sorting">
+              <option class="goods-sorting-popular" value="Популярные">Популярные</option>
+            </select>
+          </form>
+          <!-- Кнопки сортировки снизу, сверху -->
+          <button class="sorting-button-up" type="button">
+            <span class="visually-hidden">Сверху</span>
+          </button>
+          <button class="sorting-button-down" type="button">
+            <span class="visually-hidden">Снизу</span>
+          </button>
+        </header>
+      </section>
+      <!-- Список товаров -->
+      <ul class="goods-list">
+        <li class="goods-item">
+          <img class="goods-item-img" src="#" alt="">
+          <h3 class="goods-item-title">Любительская селфи-палка</h3>
+          <p class="goods-item-price">500 ₽</p>
+          <button class="goods-item-button" type="button">Подробнее</button>
+        </li>
+        <li class="goods-item">
+          <img class="goods-item-img" src="#" alt="">
+          <h3 class="goods-item-title">Профессиональная селфи-палка</h3>
+          <p class="goods-item-price">1 500 ₽</p>
+          <button class="goods-item-button" type="button">Подробнее</button>
+        </li>
+        <li class="goods-item">
+          <img class="goods-item-img" src="#" alt="">
+          <h3 class="goods-item-title">Непотопляемая селфи-палка</h3>
+          <p class="goods-item-price">2 500 ₽</p>
+          <button class="goods-item-button" type="button">Подробнее</button>
+        </li>
+        <li class="goods-item">
+          <img class="goods-item-img" src="#" alt="">
+          <h3 class="goods-item-title">Селфи-палка «Следуй за мной»</h3>
+          <p class="goods-item-price">1 500 ₽</p>
+          <button class="goods-item-button" type="button">Подробнее</button>
+        </li>
+      </ul>
+      <!-- Блок кнопки "Загрузить ещё" -->
+      <button class="more-goods-button">Загрузить ещё</button>
+      <!-- Блок навигации списка товаров -->
+      <section class="goods-navigation">
+        <div class="goods-navigation-button-back">
+          <button class="goods-navigation-button" disabled>Назад</button>
+        </div>
+        <div class="goods-navigation-number-buttons">
+          <button class="goods-navigation-button" >1</button>
+          <button class="goods-navigation-button" >2</button>
+          <button class="goods-navigation-button" >3</button>
+          <button class="goods-navigation-button" >...</button>
+          <button class="goods-navigation-button" >15</button>
+        </div>
+        <div class="goods-navigation-button-forward">
+        <button class="goods-navigation-button" >Вперёд</button>
+        </div>
+      </section>
+    </main>
+        <!-- Футер страницы -->
+        <footer class="page-footer">
+          <!-- Блок адреса в футере -->
+          <section class="page-footer-address">
+            <!-- Логотип футера -->
+            <img class="footer-logo" src="#" alt="Логотип «Девайс»">
+            <address class="footer-address">
+              <p class="footer-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+            </address>
+          </section>
+          <!-- Блок социальных сетей и ссылок информации в футере -->
+          <section class="footer-social">
+            <!-- Блок ссылок информации в футере -->
+            <ul class="footer-info">
+              <li class="footer-info-item"><a class="footer-info-link" href="#">Доставка</a></li>
+              <li class="footer-info-item"><a class="footer-info-link" href="#">Гарантия</a></li>
+              <li class="footer-info-item"><a class="footer-info-link" href="#">Контакты</a></li>
+            </ul>
+            <!-- Блок социальных сетей в футере -->
+            <ul class="footer-social-list">
+              <li class="footer-social-item">
+                <a class="button" href="https://t.me/htmlacademy">
+                  <img class="img-social-telegram" src="#" alt="Логотип Telegram">
+                  <span class="visually-hidden">Telegram</span>
+                 </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+                  <img class="img-social-youtube" src="#" alt="Логотип YouTube">
+                  <span class="visually-hidden">YouTube</span>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="button" href="https://twitter.com/htmlacademy_ru">
+                  <img class="img-social-twitter" src="#" alt="Логотип Twitter">
+                  <span class="visually-hidden">Twitter</span>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <!-- Блок телефона и логотипа академии в футере -->
+          <section class="tel">
+            <address class="footer-tel">
+              <a href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+            </address>
+            <p class="footer-logo-academy"><a class="footer-link-academy" href="https://htmlacademy.ru/"><img class="footer-img-academy" src="#" alt="Логотип HTML Academy"></a>
+            </p>
+          </section>
+        </footer>
+      </body>
+    </html>
