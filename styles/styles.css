@@ -22,8 +22,16 @@
   font-display: swap
 }
 
+html {
+  height: 100%;
+}
+
 /* Базовые насторйки body */
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: 'Rubik', sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -32,10 +40,59 @@ body {
   background-color: #ffffff;
 }
 
+.body-container {
+  margin: 0 auto;
+  width: auto;
+}
+
+/* Скрытие элементов visually-hidden */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* Шапка страницы */
 .page-header {
   background-color: #FFE17F;
   color:#000000;
+  width: 1160px;
+  height: 150px;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding-bottom: 150px;
+}
+
+.header-logo-container {
+  display: flex;
+  width: 1040px;
+  /* height: 145px; */
+  margin: 0 auto;
+  margin-top: -20px;
+}
+
+.header-middle-container {
+  display: flex;
+  width: 1040px;
+  height: 40px;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 0;
+  justify-content: stretch;
+  align-items: center;
+}
+
+.navigation-search {
+  display: flex;
+  margin: 0  auto;
+  width: 517px;
 }
 
 .search-field {
@@ -51,11 +108,39 @@ body {
   font-family: 'Rubik', sans-serif;
   font-size: 16px;
   line-height: 20px;
-  font-size: 16px;
   color: #000000;
 }
 
+.navigation-links-list {
+  display: flex;
+  justify-content: space-between;
+  width: 523px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.navigation-links-item:first-child{
+  width: 231px;
+  margin-left: 26px;
+}
+
+.navigation-links-item:nth-child(2){
+  width: 105px;
+  margin-left: 26px;
+}
+
+.navigation-links-item:nth-child(3){
+  width: 99px;
+  height: 30px;
+  margin-left: 36px;
+}
+
+li.navigation-links-item {
+  list-style-type: none;
+}
+
 .navigation-links-item a {
+  display: block;
   color: #000000;
   text-decoration: none;
 }
@@ -66,6 +151,15 @@ body {
   color: #000000;
   text-decoration: none;
   text-align: center;
+}
+
+/* Контейнер нижней части хэдера */
+.header-bottom-container {
+  display: flex;
+  width: 1040px;
+  justify-content: stretch;
+  margin: 0 auto;
+  margin-top: 30px;
 }
 
 .navigation-dropdown-button {
@@ -101,8 +195,70 @@ body {
   line-height: 18px;
 }
 
+.navigation-advantages-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 471px;
+  height: 21px;
+  margin-left: 276px;
+  padding: 0;
+}
+
+li.navigation-advantages-item {
+  list-style-type: none;
+}
+
+.navigation-advantages-item:nth-child(2) {
+  margin-left: 45px;
+}
+
+.navigation-advantages-item:nth-child(3){
+  margin-left: 45px;
+}
+
 /* Основное содержание главной страницы */
+.main-container {
+  flex-grow: 1;
+}
+
+/* Контейнер для баннеров */
+.banner-container {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 1160px;
+}
 /* Баннеры товаров */
+.banner-list {
+  display: flex;
+  margin: 0 auto;
+  width: 1160px;
+}
+
+.banner-item-01 {
+  display: flex;
+  margin: 0 auto;
+  width: 1160px;
+}
+
+.banner-item-02 {
+  display: flex;
+  margin: 0 auto;
+  width: 1160px;
+}
+
+.banner-item-03 {
+  display: flex;
+  margin: 0 auto;
+  width: 1160px;
+}
+
+.banner {
+  width: 1160px;
+  margin: 0 auto;
+}
+
 .item-number {
   font-weight: 700;
   font-size: 180px;
@@ -142,7 +298,38 @@ body {
 }
 
 /* Отдельный блок категорий товаров с иконками */
+.categories {
+  display: flex;
+  width: 1160px;
+  height: 253px;
+  margin: 0 auto;
+  margin-top: 70px;
+  justify-content: space-around;
+}
+
+.categories-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 1160px;
+  justify-content: space-between;
+}
+
+li.category-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.category-img {
+  display: block;
+  width: 160px;
+  height: 160px;
+}
+
 .category-item a {
+  display: block;
+  height: 60px;
   font-family: 'Raleway', sans-serif;
   line-height: 24px;
   letter-spacing: -0.02em;
@@ -151,12 +338,39 @@ body {
 }
 
 /* Блок приемуществ */
+.advantages-container {
+  display: flex;
+  background-color: #F0F0F0;
+  width: auto;
+  margin: 0 auto;
+  margin-top: 70px;
+  height: 391px;
+}
 .advantages {
+  display: flex;
   background-color: #F0F0F0;
   background-size: auto;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.advantage-list {
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.advantage-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0;
+  width: 1160px;
+  height: 319px;
 }
 
 .advantage-button {
+  display: block;
   font-family: 'Raleway', sans-serif;
   line-height: 21px;
   letter-spacing: 0.2em;
@@ -164,17 +378,70 @@ body {
   color: #000000;
 }
 
+.advantage-text-container {
+  display: flex;
+  justify-content: space-between;
+  width: 694px;
+  height: 174px;
+  margin-top: 72.5px;
+  margin-left: 116px;
+  margin-right: 63px;
+  margin-bottom: 72.5px;
+  padding: 0;
+}
+
+.advantage-text-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 452px;
+  height: 174px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 .advantage-item-title {
+  margin: 0;
   font-family: 'Raleway', sans-serif;
   font-size: 50px;
   line-height: 50px;
 }
 
 .advantage-text {
+  margin: 0;
   color: #444444;
 }
 
+.advantage-img {
+  display: block;
+  width: 136px;
+  height: 164px;
+  margin: 0;
+}
+
 /* Блок доставки под заказ */
+.special-delivery {
+  display: flex;
+  justify-content: space-between;
+  width: 1160px;
+  height: 100px;
+  margin: 0 auto;
+  margin-top: 70px;
+  background-color: #F0F0F0;
+}
+
+.special-delivery-img {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 125px;
+  height: 100px;
+}
+h2 + img.special-delivery-img {
+  background-color: #FFE17F;
+}
+
 .special-delivery-button {
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
@@ -182,18 +449,51 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   text-align: center;
+  width: 910px;
+}
 
+/* Общий блок "О нас" и "Контакты" */
+.info {
+  display: flex;
+  justify-content: space-between;
+  width: 1160px;
+  margin: 0 auto;
+  margin-top: 70px;
 }
 
 /* Блок "О нас" */
+.about {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
 .about-title {
   font-family: 'Raleway', sans-serif;
   font-size: 50px;
   line-height: 50px;
+  margin: 0;
+  margin-top: 47px;
+  margin-bottom: 48px;
+}
+
+.about-text-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .about-text {
   color: #444444;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.about-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
 }
 
 .about-item {
@@ -202,68 +502,140 @@ body {
   letter-spacing: -0.02em;
 }
 
+.about-item:nth-child(2) {
+  margin-top: 19px;
+  margin-bottom: 19px;
+}
+
 .about-link {
+  display: block;
   font-family: 'Raleway', sans-serif;
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
   color: #000000;
+  width: 270px;
+  height: 40px;
+  margin-top: 30px;
 }
 
 /* Блок "Контакты" */
+.contacts {
+  display: flex;
+  flex-direction: column;
+}
 .contacts-title {
   font-family: 'Raleway', sans-serif;
   font-size: 50px;
   line-height: 50px;
+  margin: 0;
+  margin-top: 47px;
+  margin-bottom: 48px;
+}
+
+.contacts-text-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .contacts-text {
   color: #444444;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .contacts-subtitle {
   font-weight: 700;
   font-size: 24px;
+  color: #444444;
+  margin: 0;
+  margin-bottom: 15px;
 }
 
 .contacts-address-text {
   font-style: normal;
   color: #444444;
+  margin: 0;
 }
 
 .contacts-address-telephone {
   font-style: normal;
   text-decoration-line: underline;
   color: #444444;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .contacts-link {
+  display: block;
   font-family: 'Raleway', sans-serif;
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
   color: #000000;
+  width: 259px;
+  height: 40px;
 }
 
 /* Блок подписки на рассылку */
-.subs {
+.subs-container {
+  width: auto;
+  margin: 0 auto;
   background-color: #F0F0F0;
-  background-size: auto;
+}
+
+.subs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 1160px;
+  height: 421px;
+  margin: 0 auto;
+  background-color: #F0F0F0;
 }
 
 .subs-title {
+  display: block;
   font-family: 'Raleway', sans-serif;
   font-size: 50px;
   line-height: 50px;
+  margin: 0;
+  margin-top: 64px;
+}
+
+.subs-top-container {
+  display: flex;
+}
+
+.subs-bottom-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 56px;
+}
+
+.subs-text-top-container {
+  display: block;
+  margin: 0;
+  margin-top: 74px;
+  margin-left: 252px;
 }
 
 .subs-text {
   color: #444444;
 }
 
+.subs-form {
+  display: flex;
+  justify-content: space-between;
+  width: 810px;
+}
+
 .subs-input {
+  width: 557px;
   font-family: 'Rubik', sans-serif;
   font-size: 18px;
   line-height: 30px;
@@ -272,16 +644,40 @@ body {
 }
 
 .subs-button {
+  width: 253px;
   font-family: 'Raleway', sans-serif;
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
 
+.subs-img {
+  margin-left: auto;
+}
+
 /* Футер страницы */
+.page-footer-container {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #444444;
+}
+
 .page-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1160px;
+  height: 321px;
+  margin: 0 auto;
   background-color: #444444;
   background-size: auto;
+}
+
+.page-footer-address {
+  width: 239px;
+  height: 182px;
+  margin-top: 62px;
+  margin-bottom: 77px;
 }
 
 .footer-address-text {
@@ -290,6 +686,16 @@ body {
   font-style: normal;
   color: #FFFFFF;
   background-color: #444444;
+  margin-top: 35px;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  margin-bottom: 62px;
+  padding: 0;
 }
 
 .footer-info-link {
@@ -300,6 +706,18 @@ body {
   text-decoration: none;
   color: #FFFFFF;
   background-color: #444444;
+}
+
+.footer-social {
+  width: 444px;
+  height: 123px;
+  margin-top: 137px;
+  margin-bottom: 61px;
+}
+
+.footer-social-list {
+  display: flex;
+  list-style-type: none;
 }
 
 .footer-tel a{

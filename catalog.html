@@ -7,7 +7,7 @@
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
-  <body>
+  <body class="body-container">
     <!-- Шапка страницы -->
     <header class="page-header">
       <!-- Логотип шапки -->
@@ -54,7 +54,7 @@
       </nav>
     </header>
     <!-- Основное содержание страницы -->
-    <main class="main-catalog">
+    <main class="main-container main-catalog">
       <!-- Блок названия страницы и хелбных крошек -->
       <section class="breadcrumbs">
         <h2 class="breadcrumbs-title">Моноподы для селфи</h2>
@@ -169,57 +169,60 @@
         </section>
       </section>
     </main>
-        <!-- Футер страницы -->
-        <footer class="page-footer">
-          <!-- Блок адреса в футере -->
-          <section class="page-footer-address">
-            <h2 class="visaully-hidden">Физический адрес магазина.</h2>
-            <!-- Логотип футера -->
-            <img class="footer-logo" src="images/logos/logo-yellow.svg" width="145" height="36" alt="Логотип «Девайс».">
-            <address class="footer-address">
-              <p class="footer-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-            </address>
-          </section>
-          <!-- Блок социальных сетей и ссылок информации в футере -->
-          <section class="footer-social">
-            <h2 class="visaully-hidden">Социальные сети.</h2>
-            <!-- Блок ссылок информации в футере -->
-            <ul class="footer-info">
-              <li class="footer-info-item"><a class="footer-info-link" href="#">Доставка</a></li>
-              <li class="footer-info-item"><a class="footer-info-link" href="#">Гарантия</a></li>
-              <li class="footer-info-item"><a class="footer-info-link" href="#">Контакты</a></li>
-            </ul>
-            <!-- Блок социальных сетей в футере -->
-            <ul class="footer-social-list">
-              <li class="footer-social-item">
-                <a class="button" href="https://t.me/htmlacademy">
-                  <img class="img-social-telegram" src="#" alt="Логотип Telegram.">
-                  <span class="visually-hidden">Telegram.</span>
-                 </a>
-              </li>
-              <li class="footer-social-item">
-                <a class="button" href="https://www.youtube.com/user/htmlacademyru">
-                  <img class="img-social-youtube" src="#" alt="Логотип YouTube.">
-                  <span class="visually-hidden">YouTube.</span>
-                </a>
-              </li>
-              <li class="footer-social-item">
-                <a class="button" href="https://twitter.com/htmlacademy_ru">
-                  <img class="img-social-twitter" src="#" alt="Логотип Twitter.">
-                  <span class="visually-hidden">Twitter.</span>
-                </a>
-              </li>
-            </ul>
-          </section>
-          <!-- Блок телефона и логотипа академии в футере -->
-          <section class="tel">
-            <h2 class="visaully-hidden">Телефон магазина.</h2>
-            <address class="footer-tel">
-              <a href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
-            </address>
-            <p class="footer-logo-academy"><a class="footer-link-academy" href="https://htmlacademy.ru/"><img class="footer-img-academy" src="images/logos/logo-htmlacademy.svg" width="115" height="33" alt="Логотип HTML Academy."></a>
-            </p>
-          </section>
-        </footer>
-      </body>
-    </html>
+    <!-- Футер страницы -->
+    <div class="page-footer-container">
+      <footer class="page-footer">
+        <!-- Блок адреса в футере -->
+        <section class="page-footer-address">
+          <h2 class="visaully-hidden">Физический адрес магазина.</h2>
+          <!-- Логотип футера -->
+          <img class="footer-logo" src="images/logos/logo-yellow.svg" width="145" height="36" alt="Логотип «Девайс».">
+          <address class="footer-address">
+            <p class="footer-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+          </address>
+        </section>
+        <!-- Блок социальных сетей и ссылок информации в футере -->
+        <section class="footer-social">
+          <h2 class="visaully-hidden">Информация о доставке, гарантии и контактах.</h2>
+          <!-- Блок ссылок информации в футере -->
+          <ul class="footer-info">
+            <li class="footer-info-item"><a class="footer-info-link" href="#">Доставка</a></li>
+            <li class="footer-info-item"><a class="footer-info-link" href="#">Гарантия</a></li>
+            <li class="footer-info-item"><a class="footer-info-link" href="#">Контакты</a></li>
+          </ul>
+          <!-- Блок социальных сетей в футере -->
+          <h2 class="visaully-hidden">Социальные сети.</h2>
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a class="button" href="https://t.me/htmlacademy">
+                <img class="img-social-telegram" src="#" alt="Логотип Telegram">
+                <span class="visually-hidden">Telegram.</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+                <img class="img-social-youtube" src="#" alt="Логотип YouTube.">
+                <span class="visually-hidden">YouTube.</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="button" href="https://twitter.com/htmlacademy_ru">
+                <img class="img-social-twitter" src="#" alt="Логотип Twitter.">
+                <span class="visually-hidden">Twitter.</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <!-- Блок телефона и логотипа академии в футере -->
+        <section class="tel">
+          <h2 class="visaully-hidden">Телефон магазина.</h2>
+          <address class="footer-tel">
+            <a href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+          </address>
+          <p class="footer-logo-academy"><a class="footer-link-academy" href="https://htmlacademy.ru/"><img class="footer-img-academy" src="images/logos/logo-htmlacademy.svg" width="115" height="33" alt="Логотип HTML Academy"></a>
+          </p>
+        </section>
+      </footer>
+    </div>
+  </body>
+</html>
