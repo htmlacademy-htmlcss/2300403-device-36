@@ -354,6 +354,13 @@ body {
   color: #000000;
   margin-bottom: 35px;
 }
+.advantage-button-item:last-child .advantage-button {
+  margin: 0;
+}
+
+.advantage-active-button {
+  width: 280px;
+}
 
 .advantage-button-list {
   display: flex;
@@ -361,9 +368,10 @@ body {
   justify-content: center;
   list-style: none;
   margin: 0;
-  margin-right: 120px;
+  margin-right: 116px;
   padding: 0;
   width: 287px;
+  height: 319px;
 }
 
 .advantage-list {
@@ -376,9 +384,7 @@ body {
 
 .advantage-item {
   display: flex;
-  width: 873px;
-  padding-top: 72px;
-  padding-left: 116px;
+  width: 1160px;
 }
 
 .advantage-item-title {
@@ -389,9 +395,51 @@ body {
   margin-bottom: 34px;
 }
 
+.advantage-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.advantage-text-container-delivery{
+  margin-right: 110px;
+}
+
+.advantage-text-container-warranty {
+  margin-right: 83px;
+}
+
+.advantage-text-container-credit {
+  margin-right: 98px;
+}
+
 .advantage-text {
   color: #444444;
   margin: 0;
+}
+
+.advantage-img-container {
+  display: flex;
+  align-items: center;
+}
+
+.advantage-img {
+  display: block;
+}
+
+.advantage-img-courier {
+  width: 136px;
+  height: 164px;
+}
+
+.advantage-img-instruments {
+  width: 171px;
+  height: 195px;
+}
+
+.advantage-img-credit-card {
+  width: 156px;
+  height: 188px;
 }
 
 /* Блок доставки под заказ */
