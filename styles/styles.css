@@ -360,6 +360,7 @@ body {
 
 .advantage-active-button {
   width: 280px;
+  text-align: start;
 }
 
 .advantage-button-list {
