@@ -9,61 +9,66 @@
   </head>
   <body>
     <!-- Шапка страницы -->
-    <header class="page-header">
+    <header class="page-header catalog-header-container">
       <!-- Логотип шапки -->
       <h1 class="visually-hidden">Интернет-магазин «Девайс».</h1>
       <a class="header-link" href="/index.html"><img class="header-logo" src="images/logos/logo-black.svg" width="145" height="36" alt="Логотип «Девайс»."></a>
       <!-- Блок навигации -->
       <nav class="navigation">
         <!-- Блок поиска в шапке         -->
-        <section class="navigation-search">
-          <h2 class="visaully-hidden">Поиск по сайту.</h2>
-          <img class="search-img" src="#" alt="Лупа.">
-          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="search-field" type="text" placeholder="Текст поиска" name="search">
-            <button class="search-button" type="submit">Найти</button>
-          </form>
-        </section>
-        <!-- Ссылки навигации шапки         -->
-        <ul class="navigation-links-list">
-          <li class="navigation-links-item"><a href="#"><img class="navigation-links-img" src="#" alt="">Коля Петухов</a></li>
-          <li class="navigation-links-item"><a href="#">Выйти</a></li>
-          <li class="navigation-links-item"><a href="#"><img class="navigation-links-img" src="#" alt="">Сравнить</a></li>
-          <li class="navigation-links-item"><button class="navigation-links-button"><img class="navigation-links-img"  src="#" alt="">Корзина</button></li>
-        </ul>
-        <!-- Выпадающий список категорий         -->
-        <section class="navigation-dropdown">
-          <h2 class="visaully-hidden">Выпадающее меню каталога товаров.</h2>
-          <button class="navigation-dropdown-button">Каталог товаров</button>
-          <img class="navigation-dropdown-img" src="#" alt="Кнопка раскрытия каталога.">
-          <ul class="navigation-dropdown-list">
-            <li class="navigation-dropdown-item"><a class="navigation-dropdown-link" href="#">Виртуальная реальность</a></li>
-            <li class="navigation-dropdown-item"><a class="navigation-dropdown-link" href="#">Моноподы для селфи</a></li>
-            <li class="navigation-dropdown-item"><a class="navigation-dropdown-link" href="#">Экшн-камеры</a></li>
-            <li class="navigation-dropdown-item"><a class="navigation-dropdown-link" href="#">Фитнес-браслеты</a></li>
-            <li class="navigation-dropdown-item"><a class="navigation-dropdown-link" href="#">Умные часы</a></li>
-            <li class="navigation-dropdown-item"><a class="navigation-dropdown-link" href="#">Квадракоптеры</a></li>
+        <div class="middle-header-container">
+          <section class="navigation-search">
+            <h2 class="visually-hidden">Поиск по сайту.</h2>
+            <img class="search-img" src="#" alt="Лупа.">
+            <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+              <input class="search-field" type="text" placeholder="Поиск по сайту" name="search">
+              <button class="search-button" type="submit">Найти</button>
+            </form>
+          </section>
+          <!-- Ссылки навигации шапки         -->
+          <ul class="navigation-links-list">
+            <li class="navigation-links-item"><a href="#"><img class="navigation-links-img" src="#" alt="">Коля Петухов</a></li>
+            <li class="navigation-links-item"><a href="#"><img class="navigation-links-img" src="#" alt="">Выйти</a></li>
+            <li class="navigation-links-item"><a href="#"><img class="navigation-links-img" src="#" alt="">Сравнить</a></li>
+            <li class="navigation-links-item"><button class="navigation-links-button"><img class="navigation-links-img"  src="#" alt="">Корзина</button></li>
           </ul>
-        </section>
-        <!-- Ссылки навигации шапки         -->
-        <ul class="navigation-advantages-list">
-          <li class="navigation-advantages-item"><a class="navigation-advantages-link" href="#">Доставка</a></li>
-          <li class="navigation-advantages-item">Гарантия</li>
-          <li class="navigation-advantages-item">Контакты</li>
-        </ul>
+        </div>
+        <!-- Выпадающий список категорий         -->
+        <div class="bottom-header-container">
+          <section class="navigation-dropdown">
+            <h2 class="visually-hidden">Выпадающее меню каталога товаров.</h2>
+            <button class="navigation-dropdown-button">Каталог товаров</button>
+            <img class="navigation-dropdown-img" src="#" alt="Кнопка раскрытия каталога.">
+            <ul class="navigation-dropdown-list">
+              <li class="navigation-dropdown-item"><a class="navigation-dropdown-link" href="#">Виртуальная реальность</a></li>
+              <li class="navigation-dropdown-item"><a class="navigation-dropdown-link" href="#">Моноподы для селфи</a></li>
+              <li class="navigation-dropdown-item"><a class="navigation-dropdown-link" href="#">Экшн-камеры</a></li>
+              <li class="navigation-dropdown-item"><a class="navigation-dropdown-link" href="#">Фитнес-браслеты</a></li>
+              <li class="navigation-dropdown-item"><a class="navigation-dropdown-link" href="#">Умные часы</a></li>
+              <li class="navigation-dropdown-item"><a class="navigation-dropdown-link" href="#">Квадракоптеры</a></li>
+            </ul>
+          </section>
+          <!-- Ссылки навигации шапки         -->
+          <ul class="navigation-advantages-list">
+            <li class="navigation-advantages-item"><a class="navigation-advantages-link" href="#advantages">Доставка</a></li>
+            <li class="navigation-advantages-item"><a class="navigation-advantages-link" href="#advantages">Гарантия</a></li>
+            <li class="navigation-advantages-item"><a class="navigation-advantages-link" href="#">Контакты</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
+    <!-- Блок названия страницы и хелбных крошек -->
+    <section class="breadcrumbs catalog-breadcrumbs-container">
+      <h2 class="breadcrumbs-title">Моноподы для селфи</h2>
+      <ol class="breadcrumbs-list">
+        <li class="breadcrumbs-item"><a href="#">Главная</a><img class="breadcrumbs-img" src="#" alt=""></li>
+        <li class="breadcrumbs-item"><a href="#">Каталог товаров</a><img class="breadcrumbs-img" src="#" alt=""></li>
+        <li class="breadcrumbs-item"><a href="#">Моноподы для селфи</a><img class="breadcrumbs-img" src="#" alt=""></li>
+      </ol>
+    </section>
     <!-- Основное содержание страницы -->
     <main class="main-catalog">
-      <!-- Блок названия страницы и хелбных крошек -->
-      <section class="breadcrumbs">
-        <h2 class="breadcrumbs-title">Моноподы для селфи</h2>
-        <ol class="breadcrumbs-list">
-          <li class="breadcrumbs-item"><a href="#">Главная</a><img class="breadcrumbs-img" src="#" alt=""></li>
-          <li class="breadcrumbs-item"><a href="#">Каталог товаров</a><img class="breadcrumbs-img" src="#" alt=""></li>
-          <li class="breadcrumbs-item"><a href="#">Моноподы для селфи</a><img class="breadcrumbs-img" src="#" alt=""></li>
-        </ol>
-      </section>
+      <div class="main-catalog-container">
       <!-- Блок боковой панели, фильтр -->
       <aside class="catalog-aside">
         <form class="catalog-aside-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -77,13 +82,13 @@
           <div class="aside-color">
             <h2 class="aside-color-title">Цвет</h2>
             <label><input type="checkbox" name="aside-color-black" id="aside-color-black" checked>
-            Черный</label><br>
+            Черный</label>
             <label><input type="checkbox" name="aside-color-white" id="aside-color-white" checked>
-            Белый</label><br>
+            Белый</label>
             <label><input type="checkbox" name="aside-color-blue" id="aside-color-blue">
-            Синий</label><br>
+            Синий</label>
             <label><input type="checkbox" name="aside-color-red" id="aside-color-red">
-            Красный</label><br>
+            Красный</label>
             <label><input type="checkbox" name="aside-color-pink" id="aside-color-pink">
             Розовый</label>
           </div>
@@ -92,7 +97,7 @@
             <h2 class="aside-bluetooth-title">Bluetooth</h2>
             <label>
               <input type="radio" name="bluetooth" value="Есть" checked>Есть
-            </label><br>
+            </label>
             <label>
               <input type="radio" name="bluetooth" value="Нет">Нет
             </label>
@@ -103,8 +108,9 @@
           </div>
         </form>
       </aside>
+      <!-- Контейнер-блок товаров -->
       <section class="main-goods">
-        <h2 class="visaully-hidden">Основной каталог товаров.</h2>
+        <h2 class="visually-hidden">Основной каталог товаров.</h2>
         <!-- Блок сортировки над списком товаров -->
         <section class="goods-sorting">
           <h2 class="goods-sorting-title">сортировка:</h2>
@@ -114,12 +120,14 @@
             </select>
           </form>
           <!-- Кнопки сортировки снизу, сверху -->
+          <div class="buttons-sorting-container">
           <button class="sorting-button-up" type="button">
             <span class="visually-hidden">Сверху.</span>
           </button>
           <button class="sorting-button-down" type="button">
             <span class="visually-hidden">Снизу.</span>
           </button>
+          </div>
         </section>
         <!-- Список товаров -->
         <ul class="goods-list">
@@ -152,7 +160,7 @@
         <button class="more-goods-button">Загрузить ещё</button>
         <!-- Блок навигации списка товаров -->
         <section class="goods-navigation">
-          <h2 class="visaully-hidden">Навигация списка страниц товаров.</h2>
+          <h2 class="visually-hidden">Навигация списка страниц товаров.</h2>
           <div class="goods-navigation-button-back">
             <button class="goods-navigation-button" disabled>Назад</button>
           </div>
@@ -168,58 +176,62 @@
           </div>
         </section>
       </section>
+      </div>
     </main>
-        <!-- Футер страницы -->
-        <footer class="page-footer">
-          <!-- Блок адреса в футере -->
-          <section class="page-footer-address">
-            <h2 class="visaully-hidden">Физический адрес магазина.</h2>
-            <!-- Логотип футера -->
-            <img class="footer-logo" src="images/logos/logo-yellow.svg" width="145" height="36" alt="Логотип «Девайс».">
-            <address class="footer-address">
-              <p class="footer-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-            </address>
-          </section>
-          <!-- Блок социальных сетей и ссылок информации в футере -->
-          <section class="footer-social">
-            <h2 class="visaully-hidden">Социальные сети.</h2>
-            <!-- Блок ссылок информации в футере -->
-            <ul class="footer-info">
-              <li class="footer-info-item"><a class="footer-info-link" href="#">Доставка</a></li>
-              <li class="footer-info-item"><a class="footer-info-link" href="#">Гарантия</a></li>
-              <li class="footer-info-item"><a class="footer-info-link" href="#">Контакты</a></li>
-            </ul>
-            <!-- Блок социальных сетей в футере -->
-            <ul class="footer-social-list">
-              <li class="footer-social-item">
-                <a class="button" href="https://t.me/htmlacademy">
-                  <img class="img-social-telegram" src="#" alt="Логотип Telegram.">
-                  <span class="visually-hidden">Telegram.</span>
-                 </a>
-              </li>
-              <li class="footer-social-item">
-                <a class="button" href="https://www.youtube.com/user/htmlacademyru">
-                  <img class="img-social-youtube" src="#" alt="Логотип YouTube.">
-                  <span class="visually-hidden">YouTube.</span>
-                </a>
-              </li>
-              <li class="footer-social-item">
-                <a class="button" href="https://twitter.com/htmlacademy_ru">
-                  <img class="img-social-twitter" src="#" alt="Логотип Twitter.">
-                  <span class="visually-hidden">Twitter.</span>
-                </a>
-              </li>
-            </ul>
-          </section>
-          <!-- Блок телефона и логотипа академии в футере -->
-          <section class="tel">
-            <h2 class="visaully-hidden">Телефон магазина.</h2>
-            <address class="footer-tel">
-              <a href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
-            </address>
-            <p class="footer-logo-academy"><a class="footer-link-academy" href="https://htmlacademy.ru/"><img class="footer-img-academy" src="images/logos/logo-htmlacademy.svg" width="115" height="33" alt="Логотип HTML Academy."></a>
-            </p>
-          </section>
-        </footer>
+    <!-- Футер страницы -->
+    <div class="page-footer-container">
+      <footer class="page-footer">
+        <!-- Блок адреса в футере -->
+        <section class="page-footer-address">
+          <h2 class="visually-hidden">Физический адрес магазина.</h2>
+          <!-- Логотип футера -->
+          <img class="footer-logo" src="images/logos/logo-yellow.svg" width="145" height="36" alt="Логотип «Девайс».">
+          <address class="footer-address">
+            <p class="footer-address-text">Санкт-Петербург, набережная <br>реки Карповки, 5, литера П.</p>
+          </address>
+        </section>
+        <!-- Блок социальных сетей и ссылок информации в футере -->
+        <section class="footer-social">
+          <h2 class="visually-hidden">Информация о доставке, гарантии и контактах.</h2>
+          <!-- Блок ссылок информации в футере -->
+          <ul class="footer-info">
+            <li class="footer-info-item"><a class="footer-info-link" href="#">Доставка</a></li>
+            <li class="footer-info-item"><a class="footer-info-link" href="#">Гарантия</a></li>
+            <li class="footer-info-item"><a class="footer-info-link" href="#">Контакты</a></li>
+          </ul>
+          <!-- Блок социальных сетей в футере -->
+          <h2 class="visually-hidden">Социальные сети.</h2>
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a class="button" href="https://t.me/htmlacademy">
+                <img class="img-social-telegram" src="#" alt="Логотип Telegram">
+                <span class="visually-hidden">Telegram.</span>
+               </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+                <img class="img-social-youtube" src="#" alt="Логотип YouTube.">
+                <span class="visually-hidden">YouTube.</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="button" href="https://twitter.com/htmlacademy_ru">
+                <img class="img-social-twitter" src="#" alt="Логотип Twitter.">
+                <span class="visually-hidden">Twitter.</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <!-- Блок телефона и логотипа академии в футере -->
+        <section class="tel">
+          <h2 class="visually-hidden">Телефон магазина.</h2>
+          <address class="footer-tel">
+            <a href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+          </address>
+          <p class="footer-logo-academy"><a class="footer-link-academy" href="https://htmlacademy.ru/"><img class="footer-img-academy" src="images/logos/logo-htmlacademy.svg" width="115" height="33" alt="Логотип HTML Academy."></a>
+          </p>
+        </section>
+      </footer>
+      </div>
       </body>
     </html>
