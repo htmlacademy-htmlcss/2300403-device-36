@@ -99,6 +99,7 @@ body {
 
 .navigation-search {
   display: flex;
+  align-items: center;
   width: 517px;
   margin-right: 26px;
 }
@@ -122,6 +123,7 @@ body {
 .navigation-links-list {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -677,6 +679,7 @@ h2 + img.special-delivery-img {
 
 .footer-info {
   display: flex;
+  justify-content: space-between;
   margin: 0;
   margin-bottom: 62px;
   padding: 0;
@@ -703,6 +706,7 @@ h2 + img.special-delivery-img {
 
 .footer-social-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   list-style: none;
   margin: 0;
@@ -911,6 +915,8 @@ h2 + img.special-delivery-img {
   background-color: #FFFFFF;
   margin: 0;
   margin-bottom: 44px;
+  margin-right: 40px;
+  list-style: none;
 }
 
 .goods-item-title {
