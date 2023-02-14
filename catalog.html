@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
@@ -7,12 +8,14 @@
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
+
   <body>
     <!-- Шапка страницы -->
     <header class="page-header catalog-header-container">
       <!-- Логотип шапки -->
       <h1 class="visually-hidden">Интернет-магазин «Девайс».</h1>
-      <a class="header-link" href="/index.html"><img class="header-logo" src="images/logos/logo-black.svg" width="145" height="36" alt="Логотип «Девайс»."></a>
+      <a class="header-link" href="/index.html"><img class="header-logo" src="images/logos/logo-black.svg" width="145"
+          height="36" alt="Логотип «Девайс»."></a>
       <!-- Блок навигации -->
       <nav class="navigation">
         <!-- Блок поиска в шапке         -->
@@ -27,10 +30,14 @@
           </section>
           <!-- Ссылки навигации шапки         -->
           <ul class="navigation-links-list">
-            <li class="navigation-links-item"><a href="#"><img class="navigation-links-img" src="#" alt="">Коля Петухов</a></li>
-            <li class="navigation-links-item"><a href="#"><img class="navigation-links-img" src="#" alt="">Выйти</a></li>
-            <li class="navigation-links-item"><a href="#"><img class="navigation-links-img" src="#" alt="">Сравнить</a></li>
-            <li class="navigation-links-item"><button class="navigation-links-button"><img class="navigation-links-img"  src="#" alt="">Корзина</button></li>
+            <li class="navigation-links-item"><a href="#"><img class="navigation-links-img" src="#" alt="">Коля
+                Петухов</a></li>
+            <li class="navigation-links-item"><a href="#"><img class="navigation-links-img" src="#" alt="">Выйти</a>
+            </li>
+            <li class="navigation-links-item"><a href="#"><img class="navigation-links-img" src="#" alt="">Сравнить</a>
+            </li>
+            <li class="navigation-links-item"><button class="navigation-links-button"><img class="navigation-links-img"
+                  src="#" alt="">Корзина</button></li>
           </ul>
         </div>
         <!-- Выпадающий список категорий         -->
@@ -40,8 +47,10 @@
             <button class="navigation-dropdown-button">Каталог товаров</button>
             <img class="navigation-dropdown-img" src="#" alt="Кнопка раскрытия каталога.">
             <ul class="navigation-dropdown-list">
-              <li class="navigation-dropdown-item"><a class="navigation-dropdown-link" href="#">Виртуальная реальность</a></li>
-              <li class="navigation-dropdown-item"><a class="navigation-dropdown-link" href="#">Моноподы для селфи</a></li>
+              <li class="navigation-dropdown-item"><a class="navigation-dropdown-link" href="#">Виртуальная
+                  реальность</a></li>
+              <li class="navigation-dropdown-item"><a class="navigation-dropdown-link" href="#">Моноподы для селфи</a>
+              </li>
               <li class="navigation-dropdown-item"><a class="navigation-dropdown-link" href="#">Экшн-камеры</a></li>
               <li class="navigation-dropdown-item"><a class="navigation-dropdown-link" href="#">Фитнес-браслеты</a></li>
               <li class="navigation-dropdown-item"><a class="navigation-dropdown-link" href="#">Умные часы</a></li>
@@ -50,8 +59,10 @@
           </section>
           <!-- Ссылки навигации шапки         -->
           <ul class="navigation-advantages-list">
-            <li class="navigation-advantages-item"><a class="navigation-advantages-link" href="#advantages">Доставка</a></li>
-            <li class="navigation-advantages-item"><a class="navigation-advantages-link" href="#advantages">Гарантия</a></li>
+            <li class="navigation-advantages-item"><a class="navigation-advantages-link" href="#advantages">Доставка</a>
+            </li>
+            <li class="navigation-advantages-item"><a class="navigation-advantages-link" href="#advantages">Гарантия</a>
+            </li>
             <li class="navigation-advantages-item"><a class="navigation-advantages-link" href="#">Контакты</a></li>
           </ul>
         </div>
@@ -69,113 +80,118 @@
     <!-- Основное содержание страницы -->
     <main class="main-catalog">
       <div class="main-catalog-container">
-      <!-- Блок боковой панели, фильтр -->
-      <aside class="catalog-aside">
-        <form class="catalog-aside-form" action="https://echo.htmlacademy.ru/" method="post">
-          <h2 class="aside-title">фильтр:</h2>
-          <!-- Блок выбора диапазона цены -->
-          <div class="aside-price">
-            <h2 class="aside-price-title">Стоимость</h2>
-            <span class="aside-price-from">от 0 </span><input type="range" id="price" name="price" min="0" max="5000" step="1"><span class="aside-price-to">до 5000</span>
-          </div>
-          <!-- Блок выбора цвета чекбоксами -->
-          <div class="aside-color">
-            <h2 class="aside-color-title">Цвет</h2>
-            <label><input type="checkbox" name="aside-color-black" id="aside-color-black" checked>
-            Черный</label>
-            <label><input type="checkbox" name="aside-color-white" id="aside-color-white" checked>
-            Белый</label>
-            <label><input type="checkbox" name="aside-color-blue" id="aside-color-blue">
-            Синий</label>
-            <label><input type="checkbox" name="aside-color-red" id="aside-color-red">
-            Красный</label>
-            <label><input type="checkbox" name="aside-color-pink" id="aside-color-pink">
-            Розовый</label>
-          </div>
-          <!-- Блок выбора Bluetooth радиокнопкой -->
-          <div class="aside-bluetooth">
-            <h2 class="aside-bluetooth-title">Bluetooth</h2>
-            <label>
-              <input type="radio" name="bluetooth" value="Есть" checked>Есть
-            </label>
-            <label>
-              <input type="radio" name="bluetooth" value="Нет">Нет
-            </label>
-          </div>
-          <!-- Кнопка применения фильтров -->
-          <div class="aside-button">
-            <input type="submit" value="Показать">
-          </div>
-        </form>
-      </aside>
-      <!-- Контейнер-блок товаров -->
-      <section class="main-goods">
-        <h2 class="visually-hidden">Основной каталог товаров.</h2>
-        <!-- Блок сортировки над списком товаров -->
-        <section class="goods-sorting">
-          <h2 class="goods-sorting-title">сортировка:</h2>
-          <form class="goods-sorting-form" action="https://echo.htmlacademy.ru/" method="post">
-            <select class="goods-sorting-select" name="goods-sorting">
-              <option class="goods-sorting-popular" value="Популярные">Популярные</option>
-            </select>
+        <!-- Блок боковой панели, фильтр -->
+        <aside class="catalog-aside">
+          <form class="catalog-aside-form" action="https://echo.htmlacademy.ru/" method="post">
+            <h2 class="aside-title">фильтр:</h2>
+            <!-- Блок выбора диапазона цены -->
+            <div class="aside-price">
+              <h2 class="aside-price-title">Стоимость</h2>
+              <span class="aside-price-from">от 0 </span><input type="range" id="price" name="price" min="0" max="5000"
+                step="1"><span class="aside-price-to">до 5000</span>
+            </div>
+            <!-- Блок выбора цвета чекбоксами -->
+            <div class="aside-color">
+              <h2 class="aside-color-title">Цвет</h2>
+              <label><input type="checkbox" name="aside-color-black" id="aside-color-black" checked>
+                Черный</label>
+              <label><input type="checkbox" name="aside-color-white" id="aside-color-white" checked>
+                Белый</label>
+              <label><input type="checkbox" name="aside-color-blue" id="aside-color-blue">
+                Синий</label>
+              <label><input type="checkbox" name="aside-color-red" id="aside-color-red">
+                Красный</label>
+              <label><input type="checkbox" name="aside-color-pink" id="aside-color-pink">
+                Розовый</label>
+            </div>
+            <!-- Блок выбора Bluetooth радиокнопкой -->
+            <div class="aside-bluetooth">
+              <h2 class="aside-bluetooth-title">Bluetooth</h2>
+              <label>
+                <input type="radio" name="bluetooth" value="Есть" checked>Есть
+              </label>
+              <label>
+                <input type="radio" name="bluetooth" value="Нет">Нет
+              </label>
+            </div>
+            <!-- Кнопка применения фильтров -->
+            <div class="aside-button">
+              <input type="submit" value="Показать">
+            </div>
           </form>
-          <!-- Кнопки сортировки снизу, сверху -->
-          <div class="buttons-sorting-container">
-          <button class="sorting-button-up" type="button">
-            <span class="visually-hidden">Сверху.</span>
-          </button>
-          <button class="sorting-button-down" type="button">
-            <span class="visually-hidden">Снизу.</span>
-          </button>
-          </div>
+        </aside>
+        <!-- Контейнер-блок товаров -->
+        <section class="main-goods">
+          <h2 class="visually-hidden">Основной каталог товаров.</h2>
+          <!-- Блок сортировки над списком товаров -->
+          <section class="goods-sorting">
+            <h2 class="goods-sorting-title">сортировка:</h2>
+            <form class="goods-sorting-form" action="https://echo.htmlacademy.ru/" method="post">
+              <select class="goods-sorting-select" name="goods-sorting">
+                <option class="goods-sorting-popular" value="Популярные">Популярные</option>
+              </select>
+            </form>
+            <!-- Кнопки сортировки снизу, сверху -->
+            <div class="buttons-sorting-container">
+              <button class="sorting-button-up" type="button">
+                <span class="visually-hidden">Сверху.</span>
+              </button>
+              <button class="sorting-button-down" type="button">
+                <span class="visually-hidden">Снизу.</span>
+              </button>
+            </div>
+          </section>
+          <!-- Список товаров -->
+          <ul class="goods-list">
+            <li class="goods-item">
+              <img class="goods-item-img" src="images/goods/monopod-01.jpg" width="360" height="380"
+                alt="Базовая модель монопода из простых материалов.">
+              <h2 class="goods-item-title">Любительская селфи-палка</h2>
+              <p class="goods-item-price">500 ₽</p>
+              <button class="goods-item-button" type="button">Подробнее</button>
+            </li>
+            <li class="goods-item">
+              <img class="goods-item-img" src="images/goods/monopod-02.jpg" width="360" height="380"
+                alt="Профессиональная модель монопода с усиленным каркасом.">
+              <h2 class="goods-item-title">Профессиональная селфи-палка</h2>
+              <p class="goods-item-price">1 500 ₽</p>
+              <button class="goods-item-button" type="button">Подробнее</button>
+            </li>
+            <li class="goods-item">
+              <img class="goods-item-img" src="images/goods/monopod-03.jpg" width="360" height="380"
+                alt="Короткий монопод в виде объёмной рукояти для использования в воде.">
+              <h2 class="goods-item-title">Непотопляемая селфи-палка</h2>
+              <p class="goods-item-price">2 500 ₽</p>
+              <button class="goods-item-button" type="button">Подробнее</button>
+            </li>
+            <li class="goods-item">
+              <img class="goods-item-img" src="images/goods/monopod-04.jpg" width="360" height="380"
+                alt="Монопод в виде руки от манекена.">
+              <h2 class="goods-item-title">Селфи-палка «Следуй за мной»</h2>
+              <p class="goods-item-price">1 500 ₽</p>
+              <button class="goods-item-button" type="button">Подробнее</button>
+            </li>
+          </ul>
+          <!-- Блок кнопки "Загрузить ещё" -->
+          <button class="more-goods-button">Загрузить ещё</button>
+          <!-- Блок навигации списка товаров -->
+          <section class="goods-navigation">
+            <h2 class="visually-hidden">Навигация списка страниц товаров.</h2>
+            <div class="goods-navigation-button-back">
+              <button class="goods-navigation-button" disabled>Назад</button>
+            </div>
+            <div class="goods-navigation-number-buttons">
+              <button class="goods-navigation-button">1</button>
+              <button class="goods-navigation-button">2</button>
+              <button class="goods-navigation-button">3</button>
+              <button class="goods-navigation-button">...</button>
+              <button class="goods-navigation-button">15</button>
+            </div>
+            <div class="goods-navigation-button-forward">
+              <button class="goods-navigation-button">Вперёд</button>
+            </div>
+          </section>
         </section>
-        <!-- Список товаров -->
-        <ul class="goods-list">
-          <li class="goods-item">
-            <img class="goods-item-img" src="images/goods/monopod-01.jpg" width="360" height="380" alt="Базовая модель монопода из простых материалов.">
-            <h2 class="goods-item-title">Любительская селфи-палка</h2>
-            <p class="goods-item-price">500 ₽</p>
-            <button class="goods-item-button" type="button">Подробнее</button>
-          </li>
-          <li class="goods-item">
-            <img class="goods-item-img" src="images/goods/monopod-02.jpg" width="360" height="380" alt="Профессиональная модель монопода с усиленным каркасом.">
-            <h2 class="goods-item-title">Профессиональная селфи-палка</h2>
-            <p class="goods-item-price">1 500 ₽</p>
-            <button class="goods-item-button" type="button">Подробнее</button>
-          </li>
-          <li class="goods-item">
-            <img class="goods-item-img" src="images/goods/monopod-03.jpg" width="360" height="380" alt="Короткий монопод в виде объёмной рукояти для использования в воде.">
-            <h2 class="goods-item-title">Непотопляемая селфи-палка</h2>
-            <p class="goods-item-price">2 500 ₽</p>
-            <button class="goods-item-button" type="button">Подробнее</button>
-          </li>
-          <li class="goods-item">
-            <img class="goods-item-img" src="images/goods/monopod-04.jpg" width="360" height="380" alt="Монопод в виде руки от манекена.">
-            <h2 class="goods-item-title">Селфи-палка «Следуй за мной»</h2>
-            <p class="goods-item-price">1 500 ₽</p>
-            <button class="goods-item-button" type="button">Подробнее</button>
-          </li>
-        </ul>
-        <!-- Блок кнопки "Загрузить ещё" -->
-        <button class="more-goods-button">Загрузить ещё</button>
-        <!-- Блок навигации списка товаров -->
-        <section class="goods-navigation">
-          <h2 class="visually-hidden">Навигация списка страниц товаров.</h2>
-          <div class="goods-navigation-button-back">
-            <button class="goods-navigation-button" disabled>Назад</button>
-          </div>
-          <div class="goods-navigation-number-buttons">
-            <button class="goods-navigation-button" >1</button>
-            <button class="goods-navigation-button" >2</button>
-            <button class="goods-navigation-button" >3</button>
-            <button class="goods-navigation-button" >...</button>
-            <button class="goods-navigation-button" >15</button>
-          </div>
-          <div class="goods-navigation-button-forward">
-            <button class="goods-navigation-button" >Вперёд</button>
-          </div>
-        </section>
-      </section>
       </div>
     </main>
     <!-- Футер страницы -->
@@ -206,7 +222,7 @@
               <a class="button" href="https://t.me/htmlacademy">
                 <img class="img-social-telegram" src="#" alt="Логотип Telegram">
                 <span class="visually-hidden">Telegram.</span>
-               </a>
+              </a>
             </li>
             <li class="footer-social-item">
               <a class="button" href="https://www.youtube.com/user/htmlacademyru">
@@ -228,10 +244,13 @@
           <address class="footer-tel">
             <a href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
           </address>
-          <p class="footer-logo-academy"><a class="footer-link-academy" href="https://htmlacademy.ru/"><img class="footer-img-academy" src="images/logos/logo-htmlacademy.svg" width="115" height="33" alt="Логотип HTML Academy."></a>
+          <p class="footer-logo-academy"><a class="footer-link-academy" href="https://htmlacademy.ru/"><img
+                class="footer-img-academy" src="images/logos/logo-htmlacademy.svg" width="115" height="33"
+                alt="Логотип HTML Academy."></a>
           </p>
         </section>
       </footer>
-      </div>
-      </body>
-    </html>
+    </div>
+  </body>
+
+</html>
