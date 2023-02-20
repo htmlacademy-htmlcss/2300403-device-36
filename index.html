@@ -43,16 +43,6 @@
             <h2 class="visually-hidden">Выпадающее меню каталога товаров.</h2>
             <button class="navigation-dropdown-button">Каталог товаров</button>
             <img class="navigation-dropdown-img" src="#" alt="Кнопка раскрытия каталога.">
-            <ul class="navigation-dropdown-list">
-              <li class="navigation-dropdown-item"><a class="navigation-dropdown-link" href="#">Виртуальная
-                  реальность</a></li>
-              <li class="navigation-dropdown-item"><a class="navigation-dropdown-link" href="#">Моноподы для селфи</a>
-              </li>
-              <li class="navigation-dropdown-item"><a class="navigation-dropdown-link" href="#">Экшн-камеры</a></li>
-              <li class="navigation-dropdown-item"><a class="navigation-dropdown-link" href="#">Фитнес-браслеты</a></li>
-              <li class="navigation-dropdown-item"><a class="navigation-dropdown-link" href="#">Умные часы</a></li>
-              <li class="navigation-dropdown-item"><a class="navigation-dropdown-link" href="#">Квадракоптеры</a></li>
-            </ul>
           </section>
           <!-- Ссылки навигации шапки         -->
           <ul class="navigation-advantages-list">
@@ -63,6 +53,22 @@
             <li class="navigation-advantages-item"><a class="navigation-advantages-link" href="#">Контакты</a></li>
           </ul>
         </div>
+        <!-- Скрытый блок выпадающих ссылок для дальнейшего внедрения -->
+        <!-- <div class="navigation-dropdown-list-container">
+          <ul class="navigation-dropdown-list">
+            <li class="navigation-dropdown-item">
+              <a class="navigation-dropdown-link" href="#">Виртуальная
+                реальность</a><br>
+              <a class="navigation-dropdown-link" href="#">Моноподы для селфи</a><br>
+              <a class="navigation-dropdown-link" href="#">Экшн-камеры</a><br>
+            </li>
+            <li class="navigation-dropdown-item">
+              <a class="navigation-dropdown-link" href="#">Фитнес-браслеты</a><br>
+              <a class="navigation-dropdown-link" href="#">Умные часы</a>
+            </li>
+            <li class="navigation-dropdown-item"><a class="navigation-dropdown-link" href="#">Квадракоптеры</a></li>
+          </ul>
+        </div> -->
       </nav>
     </header>
     <!-- Основное содержание страницы     -->
@@ -73,67 +79,131 @@
         <!-- Баннеры товаров -->
         <ol class="banner-list">
           <!-- Баннер товара 01 -->
-          <li class="banner-item-01">
-            <img class="item-01-img" src="images/banners/banner-quadcopter.png" width="560" height="560"
-              alt="Квадракоптер.">
-            <div class="banner-item-01-text-container">
-              <span class="item-number">01</span>
-              <h2 class="banner-title">Пархает как бабочка, жалит как пчела!</h2>
-              <p class="banner-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
-                замаскированным под стандартную камеру.</p>
-              <a class="item-link" href="#">Подробнее</a>
-              <p class="banner-text-details"><b class="banner-text-bold">800 М</b> Дальность полета</p>
-              <p class="banner-text-details"><b class="banner-text-bold">50 М </b> Радиус поражения</p>
+          <li class="banner-item-container">
+            <div class="banner-item-content">
+              <img class="item-01-img" src="images/banners/banner-quadcopter.png" width="560" height="560"
+                alt="Квадракоптер.">
             </div>
-            <!-- Нижняя кнопка навигации баннера 01        -->
-            <button class="banner-nav-button" type="button">
-              <span class="visually-hidden">Баннер 01.</span>
-            </button>
+            <div class="banner-item-text-container">
+              <span class="item-number">01</span>
+              <div class="bottom-item-text-container">
+                <h2 class="banner-title">Порхает как бабочка, жалит как пчела!</h2>
+                <p class="banner-text">Этот обычный, на первый взгляд, квадрокоптер оснащен <br>мощным лазером,
+                  замаскированным под стандартную камеру.</p>
+                <a class="item-link" href="#">Подробнее</a>
+                <div class="banner-text-details-container">
+                  <p class="banner-text-details"><b class="banner-text-bold">800 М</b> <br>Дальность полета</p>
+                  <p class="banner-text-details"><b class="banner-text-bold">50 М </b> <br>Радиус поражения</p>
+                </div>
+              </div>
+            </div>
+            <!-- Нижние кнопки навигации баннера 01        -->
+            <div class="banner-bottom-buttons-container">
+              <button class="banner-nav-button" type="button">01
+                <span class="visually-hidden">Баннер 01.</span>
+              </button>
+              <button class="banner-nav-button" type="button">02
+                <span class="visually-hidden">Баннер 02.</span>
+              </button>
+              <button class="banner-nav-button" type="button">03
+                <span class="visually-hidden">Баннер 03.</span>
+              </button>
+            </div>
+            <!-- Кнопки баннеров "вперед, назад"         -->
+            <div class="banner-buttons-container">
+              <button class="banner-button-previous" type="button">
+                < <span class="visually-hidden">Предыдущий товар.</span>
+              </button>
+              <button class="banner-button-next" type="button"> >
+                <span class="visually-hidden">Следующий товар.</span>
+              </button>
+            </div>
           </li>
           <!-- Баннер товара 02 -->
-          <li class="banner-item-02">
-            <img class="item-02-img" src="images/banners/banner-fitness-bracelet.png" width="560" height="560"
-              alt="Фитнес-браслет.">
-            <div class="banner-item-02-text-container">
-              <span class="item-number">02</span>
-              <h2 class="banner-title">Пархает как бабочка, жалит как пчела!</h2>
-              <p class="banner-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и
-                соблюдать диету.</p>
-              <a class="item-link" href="#">Подробнее</a>
-              <p class="banner-text-details"><b class="banner-text-bold">48 часов</b> без подзарядки</p>
+          <li class="banner-item-container">
+            <div class="banner-item-content">
+              <img class="item-02-img" src="images/banners/banner-fitness-bracelet.png" width="560" height="560"
+                alt="Фитнес-браслет.">
             </div>
-            <!-- Нижняя кнопка навигации баннера 02        -->
-            <button class="banner-nav-button" type="button">
-              <span class="visually-hidden">Баннер 02.</span>
-            </button>
+            <div class="banner-item-text-container">
+              <span class="item-number">02</span>
+              <h2 class="banner-title">Худеем <br>правильно!</h2>
+              <p class="banner-text">Мотивирующие фитнес-браслеты помогут найти в себе силы <br>не пропускать занятия
+                и соблюдать диету.</p>
+              <a class="item-link" href="#">Подробнее</a>
+              <div class="banner-text-details-container">
+                <p class="banner-text-details"><b class="banner-text-bold">48 часов</b> <br>без подзарядки</p>
+              </div>
+            </div>
+            <!-- Нижнbb кнопкb навигации баннера 02        -->
+            <div class="banner-bottom-buttons-container">
+              <button class="banner-nav-button" type="button">01
+                <span class="visually-hidden">Баннер 01.</span>
+              </button>
+              <button class="banner-nav-button" type="button">02
+                <span class="visually-hidden">Баннер 02.</span>
+              </button>
+              <button class="banner-nav-button" type="button">03
+                <span class="visually-hidden">Баннер 03.</span>
+              </button>
+            </div>
+            <!-- Кнопки баннеров "вперед, назад"         -->
+            <div class="banner-buttons-container">
+              <button class="banner-button-previous" type="button">
+                < <span class="visually-hidden">Предыдущий товар.</span>
+              </button>
+              <button class="banner-button-next" type="button"> >
+                <span class="visually-hidden">Следующий товар.</span>
+              </button>
+            </div>
           </li>
           <!-- Баннер товара 03        -->
-          <li class="banner-item-03">
-            <img class="item-03-img" src="images/banners/banner-monopod.png" width="560" height="560"
-              alt="Селфи-палка.">
-            <div class="banner-item-03-text-container">
+          <li class="banner-item-container">
+            <div class="banner-item-content">
+              <img class="item-03-img" src="images/banners/banner-monopod.png" width="560" height="560"
+                alt="Селфи-палка.">
+            </div>
+            <div class="banner-item-text-container">
               <span class="item-number">03</span>
-              <h2 class="banner-title">Делай селфи, как Бен Стиллер!</h2>
+              <h2 class="banner-title">Делай селфи, <br>как Бен Стиллер!</h2>
               <p class="banner-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!)
                 метров длиной и весом всего 5 кг.</p>
               <a class="item-link" href="#">Подробнее</a>
-              <p class="banner-text-details"><b class="banner-text-bold">8,5 м</b> Длина палки</p>
-              <p class="banner-text-details"><b class="banner-text-bold">5 кг</b> Вес палки</p>
-              <p class="banner-text-details"><b class="banner-text-bold">Карбон</b> Материал</p>
+              <div class="banner-text-details-container">
+                <p class="banner-text-details banner-text-details-item-03"><b class="banner-text-bold">8,5 м</b>
+                  <br>Длина палки
+                </p>
+                <p class="banner-text-details banner-text-details-item-03"><b class="banner-text-bold">5 кг</b>
+                  <br>Вес палки
+                </p>
+                <p class="banner-text-details banner-text-details-item-03"><b class="banner-text-bold">Карбон</b>
+                  <br>Материал
+                </p>
+              </div>
             </div>
-            <!-- Нижняя кнопка навигации баннера 03        -->
-            <button class="banner-nav-button" type="button">
-              <span class="visually-hidden">Баннер 03.</span>
-            </button>
+            <!-- Нижнии кнопки навигации баннера 03        -->
+            <div class="banner-bottom-buttons-container">
+              <button class="banner-nav-button" type="button">01
+                <span class="visually-hidden">Баннер 01.</span>
+              </button>
+              <button class="banner-nav-button" type="button">02
+                <span class="visually-hidden">Баннер 02.</span>
+              </button>
+              <button class="banner-nav-button" type="button">03
+                <span class="visually-hidden">Баннер 03.</span>
+              </button>
+            </div>
+            <!-- Кнопки баннеров "вперед, назад"         -->
+            <div class="banner-buttons-container">
+              <button class="banner-button-previous" type="button">
+                < <span class="visually-hidden">Предыдущий товар.</span>
+              </button>
+              <button class="banner-button-next" type="button"> >
+                <span class="visually-hidden">Следующий товар.</span>
+              </button>
+            </div>
           </li>
         </ol>
-        <!-- Кнопки баннеров "вперед, назад"         -->
-        <button class="banner-button-previous" type="button">
-          <span class="visually-hidden">Предыдущий товар.</span>
-        </button>
-        <button class="banner-button-next" type="button">
-          <span class="visually-hidden">Следующий товар.</span>
-        </button>
       </section>
       <!-- Отдельный блок категорий товаров с иконками -->
       <section class="categories">
