@@ -46,16 +46,6 @@
             <h2 class="visually-hidden">Выпадающее меню каталога товаров.</h2>
             <button class="navigation-dropdown-button">Каталог товаров</button>
             <img class="navigation-dropdown-img" src="#" alt="Кнопка раскрытия каталога.">
-            <ul class="navigation-dropdown-list">
-              <li class="navigation-dropdown-item"><a class="navigation-dropdown-link" href="#">Виртуальная
-                  реальность</a></li>
-              <li class="navigation-dropdown-item"><a class="navigation-dropdown-link" href="#">Моноподы для селфи</a>
-              </li>
-              <li class="navigation-dropdown-item"><a class="navigation-dropdown-link" href="#">Экшн-камеры</a></li>
-              <li class="navigation-dropdown-item"><a class="navigation-dropdown-link" href="#">Фитнес-браслеты</a></li>
-              <li class="navigation-dropdown-item"><a class="navigation-dropdown-link" href="#">Умные часы</a></li>
-              <li class="navigation-dropdown-item"><a class="navigation-dropdown-link" href="#">Квадракоптеры</a></li>
-            </ul>
           </section>
           <!-- Ссылки навигации шапки         -->
           <ul class="navigation-advantages-list">
@@ -66,6 +56,22 @@
             <li class="navigation-advantages-item"><a class="navigation-advantages-link" href="#">Контакты</a></li>
           </ul>
         </div>
+        <!-- Скрытый блок выпадающих ссылок для дальнейшего внедрения -->
+        <!-- <div class="navigation-dropdown-list-container">
+          <ul class="navigation-dropdown-list">
+            <li class="navigation-dropdown-item">
+              <a class="navigation-dropdown-link" href="#">Виртуальная
+                реальность</a><br>
+              <a class="navigation-dropdown-link" href="#">Моноподы для селфи</a><br>
+              <a class="navigation-dropdown-link" href="#">Экшн-камеры</a><br>
+            </li>
+            <li class="navigation-dropdown-item">
+              <a class="navigation-dropdown-link" href="#">Фитнес-браслеты</a><br>
+              <a class="navigation-dropdown-link" href="#">Умные часы</a>
+            </li>
+            <li class="navigation-dropdown-item"><a class="navigation-dropdown-link" href="#">Квадракоптеры</a></li>
+          </ul>
+        </div> -->
       </nav>
     </header>
     <!-- Блок названия страницы и хелбных крошек -->
@@ -146,29 +152,37 @@
             <li class="goods-item">
               <img class="goods-item-img" src="images/goods/monopod-01.jpg" width="360" height="380"
                 alt="Базовая модель монопода из простых материалов.">
-              <h2 class="goods-item-title">Любительская селфи-палка</h2>
-              <p class="goods-item-price">500 ₽</p>
+              <div class="goods-item-text-container">
+                <h2 class="goods-item-title">Любительская <br>селфи-палка</h2>
+                <p class="goods-item-price">500 ₽</p>
+              </div>
               <button class="goods-item-button" type="button">Подробнее</button>
             </li>
             <li class="goods-item">
               <img class="goods-item-img" src="images/goods/monopod-02.jpg" width="360" height="380"
                 alt="Профессиональная модель монопода с усиленным каркасом.">
-              <h2 class="goods-item-title">Профессиональная селфи-палка</h2>
-              <p class="goods-item-price">1 500 ₽</p>
+              <div class="goods-item-text-container">
+                <h2 class="goods-item-title">Профессиональная <br>селфи-палка</h2>
+                <p class="goods-item-price">1 500 ₽</p>
+              </div>
               <button class="goods-item-button" type="button">Подробнее</button>
             </li>
             <li class="goods-item">
               <img class="goods-item-img" src="images/goods/monopod-03.jpg" width="360" height="380"
                 alt="Короткий монопод в виде объёмной рукояти для использования в воде.">
-              <h2 class="goods-item-title">Непотопляемая селфи-палка</h2>
-              <p class="goods-item-price">2 500 ₽</p>
+              <div class="goods-item-text-container">
+                <h2 class="goods-item-title">Непотопляемая <br>селфи-палка</h2>
+                <p class="goods-item-price">2 500 ₽</p>
+              </div>
               <button class="goods-item-button" type="button">Подробнее</button>
             </li>
             <li class="goods-item">
               <img class="goods-item-img" src="images/goods/monopod-04.jpg" width="360" height="380"
                 alt="Монопод в виде руки от манекена.">
-              <h2 class="goods-item-title">Селфи-палка «Следуй за мной»</h2>
-              <p class="goods-item-price">1 500 ₽</p>
+              <div class="goods-item-text-container">
+                <h2 class="goods-item-title">Селфи-палка «Следуй за <br>мной»</h2>
+                <p class="goods-item-price">1 500 ₽</p>
+              </div>
               <button class="goods-item-button" type="button">Подробнее</button>
             </li>
           </ul>
