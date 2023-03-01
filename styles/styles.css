@@ -327,11 +327,11 @@ button {
 }
 
 .navigation-advantages-link:hover {
-  opacity: 0.3;
+  opacity: 0.6;
 }
 
 .navigation-advantages-link:active {
-  opacity: 0.6;
+  opacity: 0.3;
 }
 
 .navigation-advantages-item {
@@ -496,22 +496,25 @@ button {
   overflow: hidden;
 }
 
-.button-light-yellow-background {
+.banner-more-button::before {
   position: absolute;
+  content: "";
   width: 220px;
   height: 8px;
+  background-color: #FFE17F;;
   left: 0px;
   top: 15px;
   z-index: -1;
 }
 
-.banner-more-button:hover .button-light-yellow-background {
+.banner-more-button:hover::before {
   transform: scale(10);
   transition: 0.5s;
 }
 
-.banner-more-button:active {
-  background-color: #FFCC33;;
+.banner-more-button:active::before {
+  background: #FFC700;
+  transition: none;
 }
 
 .banner-more-button:disabled {
@@ -631,6 +634,29 @@ padding-top: 160px;
   overflow: hidden;
 }
 
+
+.advantage-button::before {
+  position: absolute;
+  content: "";
+  width: 160px;
+  height: 8px;
+  background-color: #FFE17F;;
+  left: 0px;
+  top: 15px;
+  z-index: -1;
+}
+
+.advantage-button:hover::before {
+  transform: scale(10);
+  transition: 0.5s;
+}
+
+.advantage-button:active::before {
+  background: #FFC700;
+  transition: none;
+}
+
+/*
 .advantage-button-light-yellow-background {
   position: absolute;
   width: 160px;
@@ -647,7 +673,7 @@ padding-top: 160px;
 
 .advantage-button:active {
   background-color: #FFCC33;
-}
+} */
 
 /* Дополнительные состояния кнопки кредита */
 .advantage-credit-button:hover {
@@ -904,7 +930,7 @@ padding-top: 160px;
   position: relative;
   width: 270px;
   height: 40px;
-  font-family: 'Raleway'sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -915,23 +941,27 @@ padding-top: 160px;
   overflow: hidden;
 }
 
-.about-button-line {
+.about-button::before {
   position: absolute;
-  z-index: -1;
-  top: 15px;
-  left: 0;
+  content: "";
   width: 270px;
-  height: 8x;
+  height: 8px;
+  background-color: #FFE17F;;
+  left: 0px;
+  top: 15px;
+  z-index: -1;
 }
 
-.about-button:hover .about-button-line {
+.about-button:hover::before {
   transform: scale(10);
   transition: 0.5s;
 }
 
-.about-button:active {
-  background-color: #FFCC33;;
+.about-button:active::before {
+  background: #FFC700;
+  transition: none;
 }
+
 
 .about-button:disabled {
   opacity: 0.3;
@@ -990,7 +1020,7 @@ padding-top: 160px;
   position: relative;
   width: 259px;
   height: 40px;
-  font-family: 'Raleway'sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -1001,20 +1031,25 @@ padding-top: 160px;
   overflow: hidden;
 }
 
-.contacts-button-line {
+.contacts-button::before {
   position: absolute;
-  left: 0;
+  content: "";
+  width: 259px;
+  height: 8px;
+  background-color: #FFE17F;;
+  left: 0px;
   top: 15px;
   z-index: -1;
 }
 
-.contacts-button:hover .contacts-button-line {
+.contacts-button:hover::before {
   transform: scale(10);
   transition: 0.5s;
 }
 
-.contacts-button:active {
-  background-color: #FFCC33;;
+.contacts-button:active::before {
+  background: #FFC700;
+  transition: none;
 }
 
 .contacts-button:disabled {
@@ -1487,24 +1522,29 @@ padding-top: 160px;
   margin: 0;
   padding: 0;
   overflow: hidden;
+  z-index: 0;
 }
 
-.aside-button-show-line {
+.aside-button-show::before {
   position: absolute;
+  content: "";
   width: 220px;
   height: 8px;
+  background-color: #FFE17F;;
   left: 0px;
   top: 15px;
   z-index: -1;
 }
 
-.aside-button-show:hover .aside-button-show-line {
-transform: scale(10);
-transition: 0.5s;
+
+.aside-button-show:hover::before {
+  transform: scale(10);
+  transition: 0.5s;
 }
 
-.aside-button-show:active {
-  background-color: #FFCC33;;
+.aside-button-show:active::before {
+  background: #FFC700;
+  transition: none;
 }
 
 .aside-button-show:disabled {
@@ -1598,8 +1638,14 @@ transition: 0.5s;
 
 /* Карточка товара */
 .goods-item {
-display: grid;
-row-gap: 32px;
+  display: grid;
+}
+
+.goods-item-container {
+  display: grid;
+  row-gap: 32px;
+  cursor: pointer;
+  grid-area: 1 / 1 / 2 / 2;
 }
 
 .goods-item-img {
@@ -1641,25 +1687,45 @@ row-gap: 32px;
   margin: 0 auto;
   padding: 0;
   overflow: hidden;
-  z-index: 1;
+  border: 0;
+  background: none;
+  opacity: 0;
+  z-index: 0;
 }
 
-.item-button-line {
+.goods-item-button::before {
   position: absolute;
+  content: "";
   width: 220px;
   height: 8px;
+  background-color: #FFE17F;;
   left: 0px;
   top: 15px;
-  z-index:-1;
+  z-index: -1;
 }
 
-.goods-item-button:hover .item-button-line {
+.goods-item-button:hover::before {
   transform: scale(10);
   transition: 0.5s;
 }
 
-.goods-item-button:active {
-  background-color: #FFC700;
+.goods-item-button:active::before {
+  background: #FFC700;
+  transition: none;
+}
+
+/* навожу, появляется скрытая кнопка */
+.goods-item:hover .goods-item-button {
+  opacity: 1;
+}
+
+.goods-item:hover .goods-item-img,
+.goods-item:hover .goods-item-title {
+  opacity: 0.6;
+}
+
+.goods-item-container:active .goods-item-text-container {
+  opacity: 0.3;
 }
 
 /* Кнопка "Загрузить ещё" */
