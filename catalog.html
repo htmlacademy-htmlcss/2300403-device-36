@@ -14,10 +14,8 @@
     <header class="page-header catalog-header-container">
       <!-- Логотип шапки -->
       <h1 class="visually-hidden">Интернет-магазин «Девайс».</h1>
-      <!-- <div class="header-logo-link-container"> -->
       <a class="header-logo header-logo-link focus-visible-outline" href="/index.html"><img class="catalog-header-logo"
           src="images/logos/logo-black.svg" width="145" height="36" alt="Логотип «Девайс»."></a>
-      <!-- </div> -->
       <!-- Блок навигации -->
       <nav class="navigation">
         <!-- Блок поиска в шапке         -->
@@ -25,15 +23,12 @@
           <section class="navigation-search">
             <h2 class="visually-hidden">Поиск по сайту.</h2>
             <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-              <div class="search-field-container focus-visible-outline" tabindex="0">
-                <svg class="search-img" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"
-                  viewBox="0 0 16 16">
-                  <path fill="#000"
-                    d="m15.7 14.3-3.1-3.1C13.5 10 14 8.6 14 7c0-3.9-3.1-7-7-7S0 3.1 0 7s3.1 7 7 7c1.6 0 3-.5 4.2-1.4l3.1 3.1c.2.2.4.3.7.3.6 0 1-.4 1-1 0-.2-.1-.5-.3-.7ZM2 7c0-2.8 2.2-5 5-5s5 2.2 5 5-2.2 5-5 5-5-2.2-5-5Z" />
-                </svg>
+              <div class="search-field-container">
                 <input class="search-field" type="text" placeholder="Поиск по сайту" name="search">
               </div>
-              <button class="search-button focus-visible-outline" type="submit">Найти</button>
+              <div class="search-button-container">
+                <button class="search-button" type="submit">Найти</button>
+              </div>
             </form>
           </section>
           <!-- Ссылки навигации шапки         -->
@@ -44,32 +39,69 @@
             <li class="navigation-links-item"><a class="navigation-links compare-navigation-link focus-visible-outline"
                 href="#">Сравнить</a>
             </li>
-            <li class="navigation-links-item"><button
+            <li class="navigation-button-item"><button
                 class="navigation-links cart-navigation-button navigation-links-button focus-visible-outline"
                 type="button">
                 <img class="number-two-icon" src="/images/icons/cart-and-number.svg"
                   alt="Иконка количества товаров в корзине.">
-                Корзина</button></li>
+                Корзина</button>
+              <!-- Поповер -->
+              <div class="popover-container">
+                <ul class="ul-popover-products">
+                  <li class="li-popover-product">
+                    <div class="li-popover-monopod-01"><a class="a-li-popover" href="#"><img class="popover-product-img"
+                          src="../images/goods/popover-monopod-01.jpg" width="39" height="43"
+                          alt="Иконка любительской селфи-палки.">
+                        Любительская <br>селфи-палка
+                      </a>
+                    </div>
+                    <button class="close-product-button"></button>
+                  </li>
+                  <li class="li-popover-product">
+                    <div class="li-popover-monopod-02"><a class="a-li-popover" href="#"><img class="popover-product-img"
+                          src="../images/goods/popover-monopod-02.jpg" width="39" height="43"
+                          alt="Иконка профессиональньной селфи-палки.">
+                        Профессиональная <br>селфи-палка</a>
+                      <button class="close-product-button"></button>
+                    </div>
+                  </li>
+                </ul>
+                <div class="popover-cart-info">
+                  <p class="p-popover-quantity">Товаров: <span class="popover-quantity-span">2</span></p>
+                  <p class="p-popover-price">Сумма: <span class="popover-price-span">2000</span> ₽</p>
+                </div>
+                <div class="popover-open-cart-button-container">
+                  <button class="popover-open-cart-button" type="button">Открыть корзину</button>
+                </div>
+              </div>
+            </li>
           </ul>
         </div>
         <!-- Выпадающий список категорий         -->
         <div class="bottom-header-container">
           <section class="navigation-dropdown">
             <h2 class="visually-hidden">Выпадающее меню каталога товаров.</h2>
-            <button class="navigation-dropdown-button focus-visible-outline" type="button">Каталог товаров
-              <svg class="navigation-dropdown-img" width="50" height="50" viewBox="0 0 50 50" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <circle cx="25" cy="25" r="24" stroke="black" stroke-width="2" />
-                <g clip-path="url(#clip0_481_601)">
-                  <path d="M33 24H26V17H24V24H17V26H24V33H26V26H33V24Z" fill="black" />
-                </g>
-                <defs>
-                  <clipPath id="clip0_481_601">
-                    <rect width="16" height="16" fill="white" transform="translate(17 17)" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </button>
+            <input class="navigation-dropdown-input" type="checkbox" id="navigation-dropdown-input">
+            <label class="navigation-dropdown-button focus-visible-outline" tabindex="0"
+              for="navigation-dropdown-input">Каталог
+              товаров</label>
+            <div class="navigation-dropdown-list-container">
+              <ul class="navigation-dropdown-list">
+                <li class="navigation-dropdown-item">
+                  <a class="navigation-dropdown-link focus-visible-outline" href="#">Виртуальная
+                    реальность</a><br>
+                  <a class="navigation-dropdown-link focus-visible-outline" href="/catalog.html">Моноподы для
+                    селфи</a><br>
+                  <a class="navigation-dropdown-link focus-visible-outline" href="#">Экшн-камеры</a><br>
+                </li>
+                <li class="navigation-dropdown-item">
+                  <a class="navigation-dropdown-link focus-visible-outline" href="#">Фитнес-браслеты</a><br>
+                  <a class="navigation-dropdown-link focus-visible-outline" href="#">Умные часы</a>
+                </li>
+                <li class="navigation-dropdown-item focus-visible-outline"><a class="navigation-dropdown-link"
+                    href="#">Квадракоптеры</a></li>
+              </ul>
+            </div>
           </section>
           <!-- Ссылки навигации шапки         -->
           <ul class="navigation-advantages-list">
@@ -83,22 +115,6 @@
                 href="#">Контакты</a></li>
           </ul>
         </div>
-        <!-- Скрытый блок выпадающих ссылок для дальнейшего внедрения -->
-        <!-- <div class="navigation-dropdown-list-container">
-          <ul class="navigation-dropdown-list">
-            <li class="navigation-dropdown-item">
-              <a class="navigation-dropdown-link" href="#">Виртуальная
-                реальность</a><br>
-              <a class="navigation-dropdown-link" href="#">Моноподы для селфи</a><br>
-              <a class="navigation-dropdown-link" href="#">Экшн-камеры</a><br>
-            </li>
-            <li class="navigation-dropdown-item">
-              <a class="navigation-dropdown-link" href="#">Фитнес-браслеты</a><br>
-              <a class="navigation-dropdown-link" href="#">Умные часы</a>
-            </li>
-            <li class="navigation-dropdown-item"><a class="navigation-dropdown-link" href="#">Квадракоптеры</a></li>
-          </ul>
-        </div> -->
       </nav>
     </header>
     <!-- Блок названия страницы и хелбных крошек -->
@@ -118,44 +134,108 @@
       <div class="main-catalog-container">
         <!-- Блок боковой панели, фильтр -->
         <aside class="catalog-aside">
-          <form class="catalog-aside-form" action="https://echo.htmlacademy.ru/" method="post">
+
+          <form class="aside-filter-panel" action="https://echo.htmlacademy.ru/" method="get">
+
             <h2 class="aside-title">Фильтр:</h2>
-            <!-- Блок выбора диапазона цены -->
-            <div class="aside-price">
-              <h2 class="aside-price-title">Стоимость</h2>
-              <input class="aside-price-range" type="range" id="price" name="price" min="0" max="5000" step="1"><br>
-              <span class="aside-price-from">от 0 </span><span class="aside-price-to">до 5000</span>
-            </div>
-            <!-- Блок выбора цвета чекбоксами -->
-            <div class="aside-color">
-              <h2 class="aside-color-title">Цвет</h2>
-              <label><input type="checkbox" name="aside-color-black" id="aside-color-black" checked>
-                Черный</label>
-              <label><input type="checkbox" name="aside-color-white" id="aside-color-white" checked>
-                Белый</label>
-              <label><input type="checkbox" name="aside-color-blue" id="aside-color-blue">
-                Синий</label>
-              <label><input type="checkbox" name="aside-color-red" id="aside-color-red">
-                Красный</label>
-              <label><input type="checkbox" name="aside-color-pink" id="aside-color-pink">
-                Розовый</label>
-            </div>
-            <!-- Блок выбора Bluetooth радиокнопкой -->
-            <div class="aside-bluetooth">
-              <h2 class="aside-bluetooth-title">Bluetooth</h2>
-              <label>
-                <input type="radio" name="bluetooth" value="Есть" checked>Есть
-              </label>
-              <label>
-                <input type="radio" name="bluetooth" value="Нет">Нет
-              </label>
-            </div>
+
+            <!-- Блок "Стоимость" -->
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Стоимость</legend>
+              <!-- Блок полоски с триггерами -->
+              <div class="range">
+                <div class="range-scale">
+                  <div class="range-bar" style="left: 0; width: 119px;">
+                    <button class="range-toggle toggle-min focus-visible-outline">
+                      <span class="visually-hidden">-</span>
+                    </button>
+                    <button class="range-toggle toggle-max focus-visible-outline">
+                      <span class="visually-hidden">+</span>
+                    </button>
+                  </div>
+                </div>
+                <!-- Блок с цифрами от и до -->
+                <div class="range-wrapper-inputs">
+                  <label class="catalog-filter-label">
+                    от <input class="range-input" type="number" value="0" name="min-price">
+                  </label>
+                  <label class="catalog-filter-label">
+                    до <input class="range-input" type="number" value="5000" name="max-price" style="width: 45px;">
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+            <!-- Блок "Цвет" -->
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Цвет</legend>
+              <ul class="catalog-filter-list">
+                <li class="catalog-filter-item color-item">
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="black" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Черный</span>
+                  </label>
+                </li>
+                <li class="catalog-filter-item color-item">
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="white" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Белый</span>
+                  </label>
+                </li>
+                <li class="catalog-filter-item color-item">
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="blue">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Синий</span>
+                  </label>
+                </li>
+                <li class="catalog-filter-item color-item">
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="red">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Красный</span>
+                  </label>
+                </li>
+                <li class="catalog-filter-item color-item">
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="pink">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Розовый</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <!-- Блок "Bluetooth" -->
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Bluetooth</legend>
+              <ul class="catalog-filter-list">
+                <li class="catalog-filter-item">
+                  <label class="bluetooth-control">
+                    <input class="visually-hidden control-input" type="radio" name="product-group"
+                      value="without-bluetooth" checked>
+                    <span class="bluetooth-control-mark"></span>
+                    <span class="control-label">Есть</span>
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="bluetooth-control">
+                    <input class="visually-hidden control-input" type="radio" name="product-group"
+                      value="with-bluetooth">
+                    <span class="bluetooth-control-mark"></span>
+                    <span class="control-label">Нет</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
             <!-- Кнопка применения фильтров -->
             <div class="aside-button">
               <button class="aside-button-show clear-button focus-visible-outline" type="submit" value="Показать">
                 Показать</button>
             </div>
+
           </form>
+
         </aside>
         <!-- Контейнер-блок товаров -->
         <section class="main-goods">
@@ -164,7 +244,7 @@
           <section class="goods-sorting">
             <h2 class="goods-sorting-title">сортировка:</h2>
             <form class="goods-sorting-form" action="https://echo.htmlacademy.ru/" method="post">
-              <select class="goods-sorting-select" name="goods-sorting">
+              <select class="goods-sorting-select focus-visible-outline" name="goods-sorting">
                 <option class="goods-sorting-popular" value="Популярные">Популярные</option>
               </select>
             </form>
@@ -283,9 +363,12 @@
           <h2 class="visually-hidden">Информация о доставке, гарантии и контактах.</h2>
           <!-- Блок ссылок информации в футере -->
           <ul class="footer-info">
-            <li class="footer-info-item"><a class="footer-info-link focus-visible-outline" href="#">Доставка</a></li>
-            <li class="footer-info-item"><a class="footer-info-link focus-visible-outline" href="#">Гарантия</a></li>
-            <li class="footer-info-item"><a class="footer-info-link focus-visible-outline" href="#">Контакты</a></li>
+            <li class="footer-info-item"><a class="footer-info-link info-link-delivery focus-visible-outline"
+                href="#">Доставка</a></li>
+            <li class="footer-info-item"><a class="footer-info-link info-link-warranty
+              focus-visible-outline" href="#">Гарантия</a></li>
+            <li class="footer-info-item"><a class="footer-info-link info-link-contacts focus-visible-outline"
+                href="#">Контакты</a></li>
           </ul>
           <!-- Блок социальных сетей в футере -->
           <h2 class="visually-hidden">Социальные сети.</h2>
