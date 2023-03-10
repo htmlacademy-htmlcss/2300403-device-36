@@ -70,16 +70,20 @@ body {
   flex-wrap: wrap;
   margin: 0 auto;
   width: 1040px;
-  height: 150px;
   padding-left: 60px;
   padding-right: 60px;
-  padding-bottom: 34px;
+  padding-bottom: 20px;
   margin-bottom: 35px;
 }
 
 .page-header {
   background-color: #FFE17F;
   color:#000000;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
 }
 
 .navigation-links-img {
@@ -127,19 +131,22 @@ body {
   width: 359px;
   display: flex;
   align-items: center;
-  border: 2px solid #000000;
+  /* border: 2px solid #000000;
   border-right: transparent;
   border-top-left-radius: 25px;
-  border-bottom-left-radius: 25px;
+  border-bottom-left-radius: 25px; */
 }
 
 .search-field-container {
   background-image: url("../images/icons/search.svg");
   background-repeat: no-repeat;
   background-position: 16px;
+  border: solid 2px transparent;
+  outline: solid 2px transparent;
 }
 
 .search-field-container:focus-within {
+  border: solid 2px transparent;
   outline: solid 2px #AF4FFF;
   z-index: 1;
 }
@@ -154,23 +161,23 @@ body {
   font-family: 'Rubik', sans-serif;
   font-size: 16px;
   line-height: 20px;
-  color: #000000;
-  background-color: transparent;
-  /* background: #FFE17F; */
-  border: none;
   padding: 10px 0;
   padding-left: 48px;
+  border: solid 2px black;
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
   flex-grow: 1;
 }
 
+.search-field::placeholder {
+  color: #000000;
+  opacity: 0.3;
+}
+
 .search-field:placeholder-shown {
   color: #000000;
   background-color: transparent;
-  opacity: 0.3;
-  border-top-left-radius: 25px;
-  border-bottom-left-radius: 25px;
+  outline: none;
 }
 
 /* Отображение курсора на всех кнопках */
@@ -189,6 +196,7 @@ button {
   border-bottom-right-radius: 25px;
   border-top-right-radius: 25px;
   padding: 10px 56px;
+  outline: solid 2px transparent;
 }
 
 /* Анимация при наведении курсора на кнопку "Найти" */
@@ -206,6 +214,18 @@ button {
 
 .search-button:disabled {
   opacity: 0.3;
+}
+
+.search-button-container {
+  border: solid 2px transparent;
+  overflow: solid 2px transparent;
+  margin-left: -6px;
+}
+
+.search-button-container:focus-within {
+  border: solid 2px transparent;
+  outline: solid 2px #AF4FFF;
+  z-index: 1;
 }
 
 .navigation-links-list {
@@ -263,6 +283,7 @@ button {
 .navigation-links-item a {
   color: #000000;
   text-decoration: none;
+  padding: 6px 4px;
 }
 
 .bottom-header-container {
@@ -284,7 +305,8 @@ button {
   text-align: center;
   border: none;
   background: none;
-  padding: 0;
+  padding: 6px 4px;
+  margin-right: -4px;
 }
 
 .navigation-dropdown-input {
@@ -370,7 +392,7 @@ button {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 0;
+  padding: 4px 4px;
   margin: 0;
 }
 
@@ -392,7 +414,7 @@ button {
 }
 
 .navigation-advantages-item:last-child {
-  margin-right: -0.2em;
+  margin-right: -10px;
 }
 
 .navigation-dropdown-link {
