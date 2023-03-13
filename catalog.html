@@ -88,18 +88,30 @@
             <div class="navigation-dropdown-list-container">
               <ul class="navigation-dropdown-list">
                 <li class="navigation-dropdown-item">
-                  <a class="navigation-dropdown-link focus-visible-outline" href="#">Виртуальная
-                    реальность</a><br>
-                  <a class="navigation-dropdown-link focus-visible-outline" href="/catalog.html">Моноподы для
-                    селфи</a><br>
-                  <a class="navigation-dropdown-link focus-visible-outline" href="#">Экшн-камеры</a><br>
+                  <ul class="navigation-dropdown-column">
+                    <li class="dropdown-column-item"><a class="navigation-dropdown-link focus-visible-outline"
+                        href="#">Виртуальная
+                        реальность</a></li>
+                    <li class="dropdown-column-item"><a class="current navigation-dropdown-link focus-visible-outline"
+                        href="/catalog.html">Моноподы для
+                        селфи</a></li>
+                    <li class="dropdown-column-item"><a class="navigation-dropdown-link focus-visible-outline"
+                        href="#">Экшн-камеры</a></li>
+                  </ul>
                 </li>
                 <li class="navigation-dropdown-item">
-                  <a class="navigation-dropdown-link focus-visible-outline" href="#">Фитнес-браслеты</a><br>
-                  <a class="navigation-dropdown-link focus-visible-outline" href="#">Умные часы</a>
+                  <ul class="navigation-dropdown-column">
+                    <li class="dropdown-column-item"><a class="navigation-dropdown-link focus-visible-outline"
+                        href="#">Фитнес-браслеты</a></li>
+                    <li class="dropdown-column-item"><a class="navigation-dropdown-link focus-visible-outline"
+                        href="#">Умные часы</a></li>
+                  </ul>
                 </li>
-                <li class="navigation-dropdown-item focus-visible-outline"><a class="navigation-dropdown-link"
-                    href="#">Квадракоптеры</a></li>
+                <li class="navigation-dropdown-item focus-visible-outline">
+                  <ul class="navigation-dropdown-column">
+                    <li class="dropdown-column-item"><a class="navigation-dropdown-link" href="#">Квадракоптеры</a></li>
+                  </ul>
+                </li>
               </ul>
             </div>
           </section>
@@ -140,37 +152,38 @@
             <h2 class="aside-title">Фильтр:</h2>
 
             <!-- Блок "Стоимость" -->
-            <fieldset class="catalog-filter-group">
+            <fieldset class="catalog-filter-group group-price">
               <legend class="catalog-filter-title">Стоимость</legend>
               <!-- Блок полоски с триггерами -->
               <div class="range">
                 <div class="range-scale">
                   <div class="range-bar" style="left: 0; width: 119px;">
-                    <button class="range-toggle toggle-min focus-visible-outline">
+                    <button tabindex="-1" class="range-toggle toggle-min">
                       <span class="visually-hidden">-</span>
                     </button>
-                    <button class="range-toggle toggle-max focus-visible-outline">
+                    <button tabindex="-1" class="range-toggle toggle-max">
                       <span class="visually-hidden">+</span>
                     </button>
                   </div>
                 </div>
                 <!-- Блок с цифрами от и до -->
                 <div class="range-wrapper-inputs">
-                  <label class="catalog-filter-label">
-                    от <input class="range-input" type="number" value="0" name="min-price">
+                  <label class="catalog-filter-label">от<input class="range-input" type="number" value="0"
+                      name="min-price">
                   </label>
-                  <label class="catalog-filter-label">
-                    до <input class="range-input" type="number" value="5000" name="max-price" style="width: 45px;">
+                  <label class="catalog-filter-label">до<input class="range-input" type="number" value="5000"
+                      name="max-price" style="width: 45px;">
                   </label>
                 </div>
               </div>
             </fieldset>
             <!-- Блок "Цвет" -->
-            <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Цвет</legend>
+            <fieldset class="catalog-filter-group group-color">
+              <legend class="catalog-filter-title-color">Цвет</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item color-item">
                   <label class="control">
+                    <span class="control-mark-focus"></span>
                     <input class="visually-hidden control-input" type="checkbox" name="black" checked>
                     <span class="control-mark"></span>
                     <span class="control-label">Черный</span>
@@ -178,6 +191,7 @@
                 </li>
                 <li class="catalog-filter-item color-item">
                   <label class="control">
+                    <span class="control-mark-focus"></span>
                     <input class="visually-hidden control-input" type="checkbox" name="white" checked>
                     <span class="control-mark"></span>
                     <span class="control-label">Белый</span>
@@ -185,6 +199,7 @@
                 </li>
                 <li class="catalog-filter-item color-item">
                   <label class="control">
+                    <span class="control-mark-focus"></span>
                     <input class="visually-hidden control-input" type="checkbox" name="blue">
                     <span class="control-mark"></span>
                     <span class="control-label">Синий</span>
@@ -192,6 +207,7 @@
                 </li>
                 <li class="catalog-filter-item color-item">
                   <label class="control">
+                    <span class="control-mark-focus"></span>
                     <input class="visually-hidden control-input" type="checkbox" name="red">
                     <span class="control-mark"></span>
                     <span class="control-label">Красный</span>
@@ -199,6 +215,7 @@
                 </li>
                 <li class="catalog-filter-item color-item">
                   <label class="control">
+                    <span class="control-mark-focus"></span>
                     <input class="visually-hidden control-input" type="checkbox" name="pink">
                     <span class="control-mark"></span>
                     <span class="control-label">Розовый</span>
@@ -207,19 +224,21 @@
               </ul>
             </fieldset>
             <!-- Блок "Bluetooth" -->
-            <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Bluetooth</legend>
+            <fieldset class="catalog-filter-group group-bluetooth">
+              <legend class="catalog-filter-title-bluetooth">Bluetooth</legend>
               <ul class="catalog-filter-list">
-                <li class="catalog-filter-item">
+                <li class="catalog-filter-item bluetooth-item">
                   <label class="bluetooth-control">
+                    <span class="control-mark-focus"></span>
                     <input class="visually-hidden control-input" type="radio" name="product-group"
                       value="without-bluetooth" checked>
                     <span class="bluetooth-control-mark"></span>
                     <span class="control-label">Есть</span>
                   </label>
                 </li>
-                <li class="catalog-filter-item">
+                <li class="catalog-filter-item bluetooth-item">
                   <label class="bluetooth-control">
+                    <span class="control-mark-focus"></span>
                     <input class="visually-hidden control-input" type="radio" name="product-group"
                       value="with-bluetooth">
                     <span class="bluetooth-control-mark"></span>
@@ -262,13 +281,13 @@
                   </defs>
                 </svg>
                 <span class="visually-hidden">Сверху.</span>
-              </button>
-              <button class="sorting-buttons sorting-button-down focus-visible-outline" type="button">
+              </button><button class="sorting-buttons sorting-button-down focus-visible-outline" type="button">
                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" viewBox="0 0 12 10">
                   <path d="M6 10 .5 0h11" />
                 </svg>
                 <span class="visually-hidden">Снизу.</span>
               </button>
+
             </div>
           </section>
           <!-- Список товаров -->
