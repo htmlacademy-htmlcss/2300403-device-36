@@ -99,7 +99,7 @@ body {
 .header-logo-link {
   display: block;
   margin-top: -20px;
-  margin-bottom: 18px;
+  margin-bottom: 19px;
 }
 
 .header-logo:hover {
@@ -116,7 +116,7 @@ body {
   justify-content: start;
   width: 1040px;
   margin: 0  auto;
-  margin-bottom: 27px;
+  margin-bottom: 30px;
 }
 
 .navigation-search {
@@ -154,9 +154,10 @@ body {
   font-family: "Rubik", sans-serif;
   font-size: 16px;
   line-height: 20px;
-  padding: 10px 0;
+  padding: 8px 0;
   padding-left: 44px;
   border: solid 2px #000000;
+  border-right: solid 2px transparent;
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
   flex-grow: 1;
@@ -190,7 +191,7 @@ button {
   border: 2px solid #000000;
   border-bottom-right-radius: 25px;
   border-top-right-radius: 25px;
-  padding: 10px 56px;
+  padding: 8px 56px;
   outline: solid 2px transparent;
 }
 
@@ -510,7 +511,9 @@ button {
   display: grid;
   grid-template-columns: 560px 600px;
   grid-template-rows: auto;
+  visibility: hidden;
 }
+
 
 .banner-item-content {
   grid-area: 1 / 1 / 2 / 2;
@@ -841,6 +844,12 @@ button {
 .advantage-item {
   display: flex;
   width: 1160px;
+  visibility: hidden;
+}
+
+/* Класс отвечающий за отображение первых баннеров */
+.active {
+  visibility: visible;
 }
 
 .advantage-item-title {
@@ -924,6 +933,10 @@ button {
   background-color: #ffe17f;
 }
 
+.special-delivery-text {
+max-height: 20px;
+}
+
 .special-delivery-info-img {
   display: flex;
   justify-content: center;
@@ -943,7 +956,6 @@ button {
   flex-grow: 1;
   font-family: "Raleway", sans-serif;
   font-size: 20px;
-  line-height: 23px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   text-align: center;
