@@ -14,7 +14,7 @@
     <header class="page-header catalog-header-container">
       <!-- Логотип шапки -->
       <h1 class="visually-hidden">Интернет-магазин «Девайс».</h1>
-      <a class="header-logo header-logo-link focus-visible-outline" href="/index.html"><img class="catalog-header-logo"
+      <a class="header-logo header-logo-link focus-visible-outline" href="index.html"><img class="catalog-header-logo"
           src="images/logos/logo-black.svg" width="145" height="36" alt="Логотип «Девайс»."></a>
       <!-- Блок навигации -->
       <nav class="navigation">
@@ -34,41 +34,39 @@
           <!-- Ссылки навигации шапки         -->
           <ul class="navigation-links-list">
             <li class="navigation-links-item"><a class="navigation-links enter-navigation-link focus-visible-outline"
-                href="#">Коля Петухов</a><span class="exit-link-span">Выйти</span>
+                href="#">Коля Петухов</a><span class="exit-link-text">Выйти</span>
             </li>
             <li class="navigation-links-item"><a class="navigation-links compare-navigation-link focus-visible-outline"
                 href="#">Сравнить</a>
             </li>
             <li class="navigation-button-item"><button
                 class="navigation-links cart-navigation-button navigation-links-button focus-visible-outline"
-                type="button">
-                <img class="number-two-icon" src="/images/icons/cart-and-number.svg"
-                  alt="Иконка количества товаров в корзине.">
-                Корзина</button>
+                type="button"><span class="cart-quantity">2</span>
+                <span class="cart-icon"></span>Корзина</button>
               <!-- Поповер -->
               <div class="popover-container">
-                <ul class="ul-popover-products">
-                  <li class="li-popover-product">
-                    <div class="li-popover-monopod-01"><a class="a-li-popover" href="#"><img class="popover-product-img"
-                          src="../images/goods/popover-monopod-01.jpg" width="39" height="43"
-                          alt="Иконка любительской селфи-палки.">
+                <ul class="list-popover-products">
+                  <li class="item-popover-product">
+                    <div class="item-popover-monopod-01"><a class="link-item-popover" href="#"><img
+                          class="popover-product-img" src="../images/goods/popover-monopod-01.jpg" width="39"
+                          height="43" alt="Иконка любительской селфи-палки.">
                         Любительская <br>селфи-палка
                       </a>
                     </div>
                     <button class="close-product-button"></button>
                   </li>
-                  <li class="li-popover-product">
-                    <div class="li-popover-monopod-02"><a class="a-li-popover" href="#"><img class="popover-product-img"
-                          src="../images/goods/popover-monopod-02.jpg" width="39" height="43"
-                          alt="Иконка профессиональньной селфи-палки.">
+                  <li class="item-popover-product">
+                    <div class="item-popover-monopod-02"><a class="link-item-popover" href="#"><img
+                          class="popover-product-img" src="../images/goods/popover-monopod-02.jpg" width="39"
+                          height="43" alt="Иконка профессиональньной селфи-палки.">
                         Профессиональная <br>селфи-палка</a>
                       <button class="close-product-button"></button>
                     </div>
                   </li>
                 </ul>
-                <div class="popover-cart-info">
-                  <p class="p-popover-quantity">Товаров: <span class="popover-quantity-span">2</span></p>
-                  <p class="p-popover-price">Сумма: <span class="popover-price-span">2000</span> ₽</p>
+                <div class="popover-cart-information">
+                  <p class="title-popover-quantity">Товаров: <span class="popover-quantity-text">2</span></p>
+                  <p class="title-popover-price">Сумма: <span class="popover-price-text">2000</span> ₽</p>
                 </div>
                 <div class="popover-open-cart-button-container">
                   <button class="popover-open-cart-button" type="button">Открыть корзину</button>
@@ -93,7 +91,7 @@
                         href="#">Виртуальная
                         реальность</a></li>
                     <li class="dropdown-column-item"><a class="current navigation-dropdown-link focus-visible-outline"
-                        href="/catalog.html">Моноподы для
+                        href="catalog.html">Моноподы для
                         селфи</a></li>
                     <li class="dropdown-column-item"><a class="navigation-dropdown-link focus-visible-outline"
                         href="#">Экшн-камеры</a></li>
@@ -118,10 +116,10 @@
           <!-- Ссылки навигации шапки         -->
           <ul class="navigation-advantages-list">
             <li class="navigation-advantages-item"><a class="navigation-advantages-link focus-visible-outline"
-                href="#advantages">Доставка</a>
+                href="#">Доставка</a>
             </li>
             <li class="navigation-advantages-item"><a class="navigation-advantages-link focus-visible-outline"
-                href="#advantages">Гарантия</a>
+                href="#">Гарантия</a>
             </li>
             <li class="navigation-advantages-item"><a class="navigation-advantages-link focus-visible-outline"
                 href="#">Контакты</a></li>
@@ -146,11 +144,8 @@
       <div class="main-catalog-container">
         <!-- Блок боковой панели, фильтр -->
         <aside class="catalog-aside">
-
           <form class="aside-filter-panel" action="https://echo.htmlacademy.ru/" method="get">
-
             <h2 class="aside-title">Фильтр:</h2>
-
             <!-- Блок "Стоимость" -->
             <fieldset class="catalog-filter-group group-price">
               <legend class="catalog-filter-title">Стоимость</legend>
@@ -252,9 +247,7 @@
               <button class="aside-button-show clear-button focus-visible-outline" type="submit" value="Показать">
                 Показать</button>
             </div>
-
           </form>
-
         </aside>
         <!-- Контейнер-блок товаров -->
         <section class="main-goods">
@@ -287,7 +280,6 @@
                 </svg>
                 <span class="visually-hidden">Снизу.</span>
               </button>
-
             </div>
           </section>
           <!-- Список товаров -->
@@ -302,7 +294,6 @@
                 </div>
               </div>
               <button class="goods-item-button" type="button">Подробнее</button>
-
             </li>
             <li class="goods-item">
               <div class="goods-item-container">
@@ -381,13 +372,15 @@
         <section class="footer-social">
           <h2 class="visually-hidden">Информация о доставке, гарантии и контактах.</h2>
           <!-- Блок ссылок информации в футере -->
-          <ul class="footer-info">
-            <li class="footer-info-item"><a class="footer-info-link info-link-delivery focus-visible-outline"
-                href="#">Доставка</a></li>
-            <li class="footer-info-item"><a class="footer-info-link info-link-warranty
+          <ul class="footer-information">
+            <li class="footer-information-item"><a
+                class="footer-information-link information-link-delivery focus-visible-outline" href="#">Доставка</a>
+            </li>
+            <li class="footer-information-item"><a class="footer-information-link information-link-warranty
               focus-visible-outline" href="#">Гарантия</a></li>
-            <li class="footer-info-item"><a class="footer-info-link info-link-contacts focus-visible-outline"
-                href="#">Контакты</a></li>
+            <li class="footer-information-item"><a
+                class="footer-information-link information-link-contacts focus-visible-outline" href="#">Контакты</a>
+            </li>
           </ul>
           <!-- Блок социальных сетей в футере -->
           <h2 class="visually-hidden">Социальные сети.</h2>
@@ -446,10 +439,11 @@
           </ul>
         </section>
         <!-- Блок телефона и логотипа академии в футере -->
-        <section class="tel">
+        <section class="section-phone-number">
           <h2 class="visually-hidden">Телефон магазина.</h2>
-          <address class="footer-tel">
-            <a class="footer-tel-link focus-visible-outline" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+          <address class="footer-phone-number">
+            <a class="footer-phone-number-link focus-visible-outline" href="tel:+78128121212">Тел.: +7 (812)
+              812-12-12</a>
           </address>
           <p class="footer-logo-academy"><a class="footer-link-academy focus-visible-outline"
               href="https://htmlacademy.ru/">
