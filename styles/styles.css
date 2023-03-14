@@ -3,7 +3,7 @@
   src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
   font-weight: 800;
   font-style: normal;
-  font-display: swap
+  font-display: swap;
 }
 
 @font-face {
@@ -11,7 +11,7 @@
   src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
-  font-display: swap
+  font-display: swap;
 }
 
 @font-face {
@@ -19,7 +19,7 @@
   src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
-  font-display: swap
+  font-display: swap;
 }
 
 /* Применение свойства visually-hidden */
@@ -45,11 +45,11 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  color:#000000;
+  color: #000000;
   background-color: #ffffff;
   padding-top: 40px;
 }
@@ -62,7 +62,7 @@ body {
   width: 1040px;
   padding-left: 60px;
   padding-right: 60px;
-  padding-bottom: 150px;
+  padding-bottom: 134px;
 }
 
 .catalog-header-container {
@@ -77,8 +77,8 @@ body {
 }
 
 .page-header {
-  background-color: #FFE17F;
-  color:#000000;
+  background-color: #ffe17f;
+  color: #000000;
 }
 
 .navigation {
@@ -93,13 +93,13 @@ body {
 .header-logo {
   display: block;
   margin-top: -20px;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 .header-logo-link {
   display: block;
   margin-top: -20px;
-  margin-bottom: 30px;
+  margin-bottom: 19px;
 }
 
 .header-logo:hover {
@@ -113,7 +113,7 @@ body {
 
 .middle-header-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   width: 1040px;
   margin: 0  auto;
   margin-bottom: 30px;
@@ -124,20 +124,13 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 517px;
-  margin-right: 26px;
+  margin-right: 24px;
 }
 
 .search-field-container {
-  width: 359px;
+  width: 358px;
   display: flex;
   align-items: center;
-  /* border: 2px solid #000000;
-  border-right: transparent;
-  border-top-left-radius: 25px;
-  border-bottom-left-radius: 25px; */
-}
-
-.search-field-container {
   background-image: url("../images/icons/search.svg");
   background-repeat: no-repeat;
   background-position: 16px;
@@ -147,7 +140,7 @@ body {
 
 .search-field-container:focus-within {
   border: solid 2px transparent;
-  outline: solid 2px #AF4FFF;
+  outline: solid 2px #af4fff;
   z-index: 1;
 }
 
@@ -158,15 +151,18 @@ body {
 
 .search-field {
   position: relative;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 16px;
   line-height: 20px;
-  padding: 10px 0;
-  padding-left: 48px;
-  border: solid 2px black;
+  padding: 8px 0;
+  padding-left: 44px;
+  border: solid 2px #000000;
+  border-right: solid 2px transparent;
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
   flex-grow: 1;
+  background: none;
+  outline: transparent;
 }
 
 .search-field::placeholder {
@@ -187,7 +183,7 @@ button {
 
 .search-button {
   width: 160px;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #000000;
@@ -195,13 +191,13 @@ button {
   border: 2px solid #000000;
   border-bottom-right-radius: 25px;
   border-top-right-radius: 25px;
-  padding: 10px 56px;
+  padding: 8px 56px;
   outline: solid 2px transparent;
 }
 
 /* Анимация при наведении курсора на кнопку "Найти" */
 .search-button:hover {
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #000000;
   transition: 0.5s;
 }
@@ -224,7 +220,7 @@ button {
 
 .search-button-container:focus-within {
   border: solid 2px transparent;
-  outline: solid 2px #AF4FFF;
+  outline: solid 2px #af4fff;
   z-index: 1;
 }
 
@@ -256,7 +252,7 @@ button {
 
 .number-two-icon {
   display: block;
-  padding-right: 12px;
+  padding-right: 14px;
 }
 
 .navigation-links:hover {
@@ -276,8 +272,8 @@ button {
   padding-left: 28px;
 }
 
-.navigation-links-item:nth-child(2){
-  margin-right: 18px;
+.navigation-links-item:nth-child(2) {
+  margin-right: 8px;
 }
 
 .navigation-links-item a {
@@ -298,6 +294,7 @@ button {
 }
 
 .navigation-links-button {
+  font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 30px;
   color: #000000;
@@ -306,7 +303,7 @@ button {
   border: none;
   background: none;
   padding: 6px 4px;
-  margin-right: -4px;
+  margin-right: -6px;
 }
 
 .navigation-dropdown-input {
@@ -318,12 +315,12 @@ button {
   display: flex;
   height: 50px;
   align-items: center;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color:#000000;
+  color: #000000;
   margin: auto;
   padding: 0;
   border: none;
@@ -332,18 +329,18 @@ button {
   z-index: 1;
 }
 
-.navigation-dropdown-button::after{
+.navigation-dropdown-button::after {
   content: url("../images/icons/plus.svg");
-  padding-left: 7px;
+  padding-left: 17px;
   opacity: 0.3;
 }
 
-.navigation-dropdown-button:hover::after{
+.navigation-dropdown-button:hover::after {
   opacity: 1;
 }
 
 /* Если чекбокс выбран, показывать и фиксировать меню */
-.navigation-dropdown-input:checked ~ .navigation-dropdown-list-container  {
+.navigation-dropdown-input:checked ~ .navigation-dropdown-list-container {
   opacity: 1;
   display: block;
 }
@@ -364,17 +361,29 @@ button {
   display: grid;
   width: 1100px;
   height: 180px;
-  grid-template-columns: 222px 211px 211px;
+  grid-template-columns: 252px 212px 211px;
   list-style: none;
   margin: 0;
   padding: 0;
   padding-left: 60px;
-  padding-top: 33px;
-  background-color: #FFE17F;
+  padding-top: 26px;
+  background-color: #ffe17f;
+}
+
+.navigation-dropdown-column {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-column-item:not(:last-child) {
+  margin-bottom: 6px;
 }
 
 .navigation-advantages-list {
-  position: relative;;
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -383,11 +392,12 @@ button {
   margin: 0;
   padding: 0;
   z-index: 1;
+  max-width: 475px;
 }
 
 .navigation-advantages-link {
-  font-family: 'Raleway', sans-serif;
-  color:#000000;
+  font-family: "Raleway", sans-serif;
+  color: #000000;
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -404,17 +414,21 @@ button {
   opacity: 0.3;
 }
 
+.navigation-advantages-item:first-child {
+  margin-right: 35px;
+}
+
 .navigation-advantages-item {
-  font-family: 'Raleway', sans-serif;
-  color:#000000;
+  font-family: "Raleway", sans-serif;
+  color: #000000;
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  margin-right: 45px;
+  margin-right: 40px;
 }
 
 .navigation-advantages-item:last-child {
-  margin-right: -10px;
+  margin-right: -8px;
 }
 
 .navigation-dropdown-link {
@@ -423,6 +437,11 @@ button {
   font-size: 16px;
   line-height: 18px;
   list-style: none;
+}
+
+.current {
+  padding-bottom: 2px;
+  border-bottom: solid 2px #000000;
 }
 
 .navigation-dropdown-link:hover {
@@ -455,6 +474,10 @@ button {
   padding: 0;
 }
 
+.bottom-item-text-container {
+  min-width: 560px;
+}
+
 .banner-bottom-buttons-container {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -481,18 +504,21 @@ button {
 }
 
 .banner-nav-button:last-child {
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 .banner-item-container {
   display: grid;
   grid-template-columns: 560px 600px;
-  grid-template-rows: 560px;
+  grid-template-rows: auto;
+  visibility: hidden;
 }
+
 
 .banner-item-content {
   grid-area: 1 / 1 / 2 / 2;
-
+  width: 560px;
+  height: 560px;
 }
 
 .banner-item-text-container {
@@ -508,15 +534,15 @@ button {
   font-weight: 700;
   font-size: 180px;
   line-height: 30px;
-  color:#ffffff;
-  background-color: #FFE17F;
+  color: #ffffff;
+  background-color: #ffe17f;
   padding-right: 49px;
-  padding-bottom: 5px;
-  padding-top: 85px;
+  padding-bottom: 9px;
+  padding-top: 82px;
 }
 
 .banner-title {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 50px;
   line-height: 50px;
   margin: 0;
@@ -530,9 +556,12 @@ button {
 }
 
 .banner-text-bold {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
   font-size: 36px;
   line-height: 30px;
-  color:#000000;
+  color: #000000;
+  padding-bottom: 12px;
 }
 
 .banner-text-details-container {
@@ -540,6 +569,8 @@ button {
 }
 
 .banner-text-details {
+  display: flex;
+  flex-direction: column;
   font-size: 16px;
   color: #444444;
   margin: 0;
@@ -558,7 +589,7 @@ button {
 /* Стилизация кнопок с желтой полоской */
 .banner-more-button {
   position: relative;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -579,8 +610,8 @@ button {
   content: "";
   width: 220px;
   height: 8px;
-  background-color: #FFE17F;;
-  left: 0px;
+  background-color: #ffe17f;
+  left: 0;
   top: 15px;
   z-index: -1;
 }
@@ -591,7 +622,7 @@ button {
 }
 
 .banner-more-button:active::before {
-  background: #FFC700;
+  background: #ffc700;
   transition: none;
 }
 
@@ -603,17 +634,28 @@ button {
   display: grid;
   grid-template-columns: auto auto;
   justify-content: space-between;
-  align-self: center;
+  align-self: start;
   grid-area: 1 / 1 / 2 / 2;
+  padding-top: 211px;
+  padding-left: 30px;
 }
+
 /* Кнопки баннеров "вперед, назад" */
+.banner-button-next,
+.banner-button-previous {
+  padding: 0;
+}
+
+
 /* Состояние при наведении */
-.banner-button-previous:hover, .banner-button-next:hover {
+.banner-button-previous:hover,
+.banner-button-next:hover {
   opacity: 0.6;
 }
 
 /* Состояние при нажатии */
-.banner-button-previous:active, .banner-button-next:active {
+.banner-button-previous:active,
+.banner-button-next:active {
   opacity: 0.3;
 }
 
@@ -624,7 +666,7 @@ button {
   margin: 0 auto;
   width: 1160px;
   margin-bottom: 70px;
-  padding-bottom: 102px;
+  padding-bottom: 114px;
 }
 
 .categories-list {
@@ -639,10 +681,11 @@ button {
 
 .category-item {
   display: flex;
+  max-width: 160px;
 }
 
 .category-item:focus-within {
-  outline: solid 2px #AF4FFF;
+  outline: solid 2px #af4fff;
 }
 
 .category-item-img-container {
@@ -651,7 +694,7 @@ button {
   align-items: center;
   width: 160px;
   height: 160px;
-  background-color:#FFE17F;
+  background-color: #ffe17f;
   margin-bottom: 32px;
 }
 
@@ -663,11 +706,11 @@ button {
   display: block;
 
   margin-bottom: 32px;
-  background-color:#FFE17F;
+  background-color: #ffe17f;
 }
 
 .category-item a {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   line-height: 24px;
   letter-spacing: -0.02em;
   text-decoration: none;
@@ -675,7 +718,7 @@ button {
 }
 
 .category-item:hover .category-item-img-container {
-  background-color: #FFC700;
+  background-color: #ffc700;
   transition: 0.5s;
 }
 
@@ -686,7 +729,7 @@ button {
 /* Блок приемуществ */
 .advantages {
   position: relative;
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
   margin-bottom: 70px;
   padding-bottom: 72px;
   z-index: 0;
@@ -699,9 +742,10 @@ button {
   margin: 0 auto;
 }
 
-.advantage-button, .advantage-active-button {
+.advantage-button,
+.advantage-active-button {
   position: relative;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.2em;
@@ -722,8 +766,8 @@ button {
   content: "";
   width: 160px;
   height: 8px;
-  background-color: #FFE17F;;
-  left: 0px;
+  background-color: #ffe17f;
+  left: 0;
   top: 15px;
   z-index: -1;
 }
@@ -734,7 +778,7 @@ button {
 }
 
 .advantage-button:active::before {
-  background: #FFC700;
+  background: #ffc700;
   transition: none;
 }
 
@@ -750,7 +794,7 @@ button {
   width: 280px;
   padding-left: 61px;
   padding-right: 127px;
-  outline: solid 2px #AF4FFF;
+  outline: solid 2px #af4fff;
 }
 
 
@@ -771,7 +815,7 @@ button {
   margin-right: 120px;
   border: none;
   background-color: #000000;
-  color: #FFE17F;
+  color: #ffe17f;
   text-align: center;
   cursor: default;
 }
@@ -785,6 +829,7 @@ button {
   margin-right: 116px;
   padding: 0;
   border-right: solid 6px;
+  min-height: 319px;
 }
 
 .advantage-list {
@@ -799,11 +844,16 @@ button {
 .advantage-item {
   display: flex;
   width: 1160px;
-  height: 319px;;
+  visibility: hidden;
+}
+
+/* Класс отвечающий за отображение первых баннеров */
+.active {
+  visibility: visible;
 }
 
 .advantage-item-title {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 50px;
   line-height: 50px;
   margin: 0;
@@ -814,21 +864,25 @@ button {
 .advantage-text-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-
+  padding-top: 74px;
 }
 
-.advantage-text-container-delivery{
-  flex-wrap: wrap;
+.advantage-text-container-delivery {
   margin-right: 110px;
+  min-width: 452px;
+  max-width: 454px;
 }
 
 .advantage-text-container-warranty {
   margin-right: 83px;
+  min-width: 475px;
+  max-width: 475px;
 }
 
 .advantage-text-container-credit {
   margin-right: 98px;
+  min-width: 475px;
+  max-width: 475px;
 }
 
 .advantage-text {
@@ -867,7 +921,7 @@ button {
   height: 100px;
   margin: 0 auto;
   margin-bottom: 70px;
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
 }
 
 .special-delivery-delivery-img {
@@ -876,7 +930,11 @@ button {
   align-items: center;
   width: 125px;
   height: 100px;
-  background-color: #FFE17F;
+  background-color: #ffe17f;
+}
+
+.special-delivery-text {
+max-height: 20px;
 }
 
 .special-delivery-info-img {
@@ -896,9 +954,8 @@ button {
   justify-content: space-between;
   align-items: center;
   flex-grow: 1;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 20px;
-  line-height: 23px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   text-align: center;
@@ -914,7 +971,7 @@ button {
 }
 
 .special-delivery-button:hover .special-delivery-delivery-img {
-  background-color: #FFC700;
+  background-color: #ffc700;
   transition: 0.5s;
 }
 
@@ -934,12 +991,13 @@ button {
 
 /* Блок "О нас" */
 .about {
-  width: 520px;
+  min-width: 520px;
+  max-width: 520px;
 }
 
 .about-title {
   position: relative;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 50px;
   line-height: 50px;
   margin: 0;
@@ -967,9 +1025,9 @@ button {
   display: flex;
   flex-direction: column;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
   padding: 0;
-  padding-left: 21px;
+  padding-left: 24px;
 }
 
 .about-item {
@@ -977,7 +1035,7 @@ button {
   line-height: 20px;
   letter-spacing: -0.02em;
   margin-bottom: 19px;
-  color: #FFC700;
+  color: #ffc700;
 }
 
 .about-item span {
@@ -993,7 +1051,7 @@ button {
   position: relative;
   width: 270px;
   height: 40px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -1009,8 +1067,8 @@ button {
   content: "";
   width: 270px;
   height: 8px;
-  background-color: #FFE17F;;
-  left: 0px;
+  background-color: #ffe17f;
+  left: 0;
   top: 15px;
   z-index: -1;
 }
@@ -1021,7 +1079,7 @@ button {
 }
 
 .about-button:active::before {
-  background: #FFC700;
+  background: #ffc700;
   transition: none;
 }
 
@@ -1032,12 +1090,14 @@ button {
 
 /* Блок "Контакты" */
 .contacts {
-  width: 532px;
+  min-width: 532px;
+  max-width: 532px;
 }
+
 /* Декоративная линия над "Контакты" */
 .contacts-title {
   position: relative;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 50px;
   line-height: 50px;
   margin: 0;
@@ -1061,7 +1121,7 @@ button {
 }
 
 .contacts-subtitle {
-  color:#444444;
+  color: #444444;
   font-weight: 700;
   font-size: 24px;
   margin: 0;
@@ -1072,7 +1132,7 @@ button {
   font-style: normal;
   color: #444444;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 .contacts-address-telephone {
@@ -1083,7 +1143,7 @@ button {
   position: relative;
   width: 259px;
   height: 40px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -1099,8 +1159,8 @@ button {
   content: "";
   width: 259px;
   height: 8px;
-  background-color: #FFE17F;;
-  left: 0px;
+  background-color: #ffe17f;
+  left: 0;
   top: 15px;
   z-index: -1;
 }
@@ -1111,7 +1171,7 @@ button {
 }
 
 .contacts-button:active::before {
-  background: #FFC700;
+  background: #ffc700;
   transition: none;
 }
 
@@ -1122,7 +1182,7 @@ button {
 /* Блок подписки на рассылку */
 .subs-container {
   margin: 0 auto;
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
 }
 
 .subs {
@@ -1133,7 +1193,7 @@ button {
   margin: 0 auto;
   padding-bottom: 56px;
   padding-top: 64px;
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
 }
 
 .subs-top-container {
@@ -1142,17 +1202,27 @@ button {
 }
 
 .subs-title {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 50px;
   line-height: 50px;
   margin: 0;
   margin-right: 252px;
+  min-width: 348px;
+  padding-left: 7px;
 }
 
 .subs-text {
   color: #444444;
   margin: 0;
   padding-top: 10px;
+}
+
+.subs-text-about {
+  min-width: 560px;
+}
+
+.subs-bottom-text {
+  padding-top: 12px;
 }
 
 .subs-bottom-text::before {
@@ -1174,14 +1244,13 @@ button {
 
 .subs-input {
   width: 557px;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 30px;
   padding-left: 16px;
   background: none;
   border: none;
-  border-bottom: solid #C4C4C4;
-  ;
+  border-bottom: solid #c4c4c4;
 }
 
 .subs-input::placeholder {
@@ -1189,18 +1258,31 @@ button {
   opacity: 0.5;
 }
 
+.subs-input:focus {
+  outline: none;
+  background: #dcdcdc;
+}
+
+.subs-input:invalid {
+  border-bottom: solid #ff3d3d;
+}
+
+.subs-input:disabled {
+  opacity: 0.3;
+}
+
 .subs-button {
   width: 253px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   line-height: 21px;
   font-size: 18px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  border: solid #C4C4C4;
+  border: solid #c4c4c4;
 }
 
 .subs-button:hover {
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #000000;
   border: solid 2px #000000;
 }
@@ -1222,7 +1304,7 @@ button {
 
 .page-footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   align-items: start;
   width: 1160px;
   margin: 0 auto;
@@ -1232,7 +1314,7 @@ button {
 
 .footer-logo {
   padding-top: 62px;
-  margin-bottom: 35px;
+  margin-bottom: 24px;
 }
 
 .footer-logo:hover {
@@ -1244,6 +1326,10 @@ button {
   opacity: 0.3;
 }
 
+.page-footer-address {
+  padding-right: 119px;
+}
+
 .footer-address {
   margin-bottom: 64px;
 }
@@ -1253,16 +1339,18 @@ button {
   font-size: 16px;
   line-height: 20px;
   font-style: normal;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #444444;
   margin: 0;
   padding-bottom: 71px;
+  min-width: 239px;
+  max-width: 239px;
 }
 
 .footer-address-text::after {
   position: absolute;
   content: "";
-  background-color: #FFC700;
+  background-color: #ffc700;
   width: 80px;
   height: 7px;
   bottom: 0;
@@ -1270,7 +1358,8 @@ button {
 }
 
 .footer-social {
-  padding-top: 137px;
+  padding-top: 132px;
+  margin-right: 183px;
 }
 
 .footer-social-item {
@@ -1289,7 +1378,7 @@ button {
 
 /* Настройки цвета фона икнонок соц. сетей */
 .bottom-social-img {
-  fill: #FFFFFF;
+  fill: #ffffff;
   opacity: 0.3;
 }
 
@@ -1300,13 +1389,13 @@ button {
 
 /* Цвет фона иконки при наведении */
 .social-button:hover .bottom-social-img {
-  fill: #FFC700;
+  fill: #ffc700;
   opacity: 1;
 }
 
 /* Цвет иконки с фоном при нажатии */
 .social-button:active .bottom-social-img {
-  fill: #FFC700;
+  fill: #ffc700;
   opacity: 0.3;
 }
 
@@ -1319,19 +1408,19 @@ button {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
-  margin-bottom: 62px;
+  margin-bottom: 56px;
   padding: 0;
   list-style: none;
 }
 
 .footer-info-link {
   display: inline-block;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #444444;
   padding-bottom: 4px;
   border-bottom: solid 2px transparent;
@@ -1350,13 +1439,13 @@ button {
 }
 
 .footer-info-link:hover {
-  color: #FFC700;
+  color: #ffc700;
   padding-bottom: 4px;
   border-bottom: solid 2px;
 }
 
 .footer-info-link:active {
-  color: #FFC700;
+  color: #ffc700;
   padding-bottom: 4px;
   border-bottom: solid 2px;
   opacity: 0.3;
@@ -1380,28 +1469,30 @@ button {
 }
 
 .tel {
-  padding-top: 140px;
+  padding-top: 139px;
 }
 
 .footer-tel {
   margin-bottom: 63px;
 }
 
-.footer-tel-link{
+.footer-tel-link {
   display: block;
   font-style: normal;
   font-size: 16px;
   line-height: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #444444;
+  min-width: 175px;
+  max-width: 175px;
 }
 
 .footer-tel-link:hover {
-  color: #FFC700;
+  color: #ffc700;
 }
 
 .footer-tel-link:active {
-  color: #FFC700;
+  color: #ffc700;
   opacity: 0.3;
 }
 
@@ -1417,15 +1508,15 @@ button {
 }
 
 .footer-img-academy path {
-  fill: #FFC700;
+  fill: #ffc700;
 }
 
 .footer-link-academy:hover .footer-img-academy path {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .footer-link-academy:active .footer-img-academy path {
-  fill: #FFFFFF;
+  fill: #ffffff;
   opacity: 0.3;
 }
 
@@ -1441,7 +1532,6 @@ button {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 1;
-
 }
 
 /* Срытие модального окна */
@@ -1453,9 +1543,19 @@ button {
 .modal {
   display: flex;
   flex-direction: column;
-  padding: 72px 80px;
+  width: 900px;
+  height: 548px;
+  /* padding: 72px 70px; */
   border: 10px solid #000000;
   background-color: #ffffff;
+  box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.modal-frame {
+  padding-top: 62px;
+  padding-right: 70px;
+  padding-left: 70px;
+  padding-bottom: 62px;
 }
 
 /* Описание и кнопка закрытия */
@@ -1470,7 +1570,7 @@ button {
   display: block;
   margin: 0;
   padding: 0;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 50px;
   line-height: 50px;
 }
@@ -1482,10 +1582,9 @@ button {
   height: 26px;
   background: none;
   border: none;
-  background: none;
   padding: 0;
   cursor: pointer;
-  }
+}
 
 .modal-title-button::after {
   position: relative;
@@ -1494,119 +1593,208 @@ button {
   left: 0;
   width: 26px;
   height: 26px;
-  }
+}
 
 .modal-title-button:hover::after {
   opacity: 0.6;
-  }
+}
 
 .modal-title-button:active::after {
   opacity: 0.3;
-  }
+}
 
 
-  /* Контейнер имени и e-mail */
-  .modal-form-name-email {
+/* Контейнер имени и e-mail */
+.modal-form-name-email {
   display: flex;
   justify-content: space-between;
   margin-bottom: 42px;
-  }
+}
 
 /* Поле имени */
 .fieldset-name {
   padding: 0;
   border: none;
   width: 360px;
-  margin-right: 40px;
-  }
+  margin: 0;
+}
 
 .legend-name {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  padding: 0;
   margin-bottom: 14px;
-  }
+}
 
 .input-name-text {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
   width: 320px;
-  height: 20px;
-  padding: 20px;
-  background: #F0F0F0;
-  border: none;
-  }
+  padding: 18px;
+  background: #f0f0f0;
+  border: solid 2px transparent;
+}
+
+.input-name-text::placeholder {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  opacity: 0.3;
+}
 
 .input-name-p::after {
   position: relative;
   content: url("../images/icons/modal-login.svg");
   width: 13px;
   height: 12px;
-  top: -44px;
-  left: 206px;
-  }
+  top: -38px;
+  left: 234px;
+}
 
 .input-name-p {
   display: block;
   padding: 0;
   margin: 0;
-  }
+
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
 
 /* Поле e-mail */
 .fieldset-email {
   padding: 0;
   border: none;
   width: 360px;
-  }
+  margin: 0;
+}
 
-  .legend-email {
+.legend-email {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.02em;
   margin-bottom: 14px;
-  }
+  padding: 0;
+}
 
 .input-email {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
   width: 320px;
-  height: 20px;
   padding: 18px 18px;
-  background: #F0F0F0;
-  border: solid 2px #FF3D3D;
-  }
+  background: #f0f0f0;
+  border: solid 2px transparent;
+}
+
+.input-email:hover,
+.input-name-text:hover,
+.input-bring:hover {
+  background: #dcdcdc;
+}
+
+
+.input-email:focus,
+.input-name-text:focus,
+.input-bring:focus {
+  border: solid 2px transparent;
+  outline: solid 2px #af4fff;
+}
+
+.input-email:invalid,
+.input-name-text:invalid,
+.input-bring:invalid {
+  background: #f0f0f0;
+  border: 2px solid #ff3d3d;
+}
+
+.fieldset-email:invalid .input-email-p,
+.fieldset-name:invalid .input-name-p {
+  color: #ff3d3d;
+}
+
+.fieldset-email:disabled .input-email,
+.fieldset-name:disabled .input-name-text,
+.fieldset-bring:disabled .input-bring {
+  background: #f0f0f0;
+  opacity: 0.3;
+}
+
+.input-email::placeholder {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  opacity: 0.3;
+}
 
 .input-email-p::after {
   position: relative;
   content: url("../images/icons/modal-mail.svg");
   width: 15px;
   height: 12px;
-  top: -44px;
-  left: 132px;
-  }
+  top: -38px;
+  left: 178px;
+}
 
 .input-email-p {
   display: block;
   padding: 0;
   margin: 0;
-  color: #FF3D3D;
-  }
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
 
 /* Контейнер "что привезти" и количество */
 .modal-bring-quantity {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 42px;
-  }
+  margin-bottom: 44px;
+}
 
 /* Поле "привезти" */
 .fieldset-bring {
   padding: 0;
   border: none;
-  margin-right: 40px;
-  }
+  margin: 0;
+}
 
 .legend-bring {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
   margin-bottom: 14px;
-  }
+  padding: 0;
+}
 
 .input-bring {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
   width: 500px;
-  height: 20px;
-  background: #F0F0F0;
-  padding: 20px;
-  border: none;
-  }
+  padding: 18px;
+  background: #f0f0f0;
+  border: solid 2px transparent;
+}
+
+.input-bring::placeholder {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  opacity: 0.3;
+}
 
 /* Блок "количество" */
 .fieldset-quantity {
@@ -1614,7 +1802,9 @@ button {
   align-items: end;
   padding: 0;
   border: 0;
-  }
+  margin: 0;
+  margin-top: -3px;
+}
 
 .legend-quantity {
   position: relative;
@@ -1622,7 +1812,13 @@ button {
   align-items: center;
   margin-bottom: 11px;
   cursor: pointer;
-  }
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+}
 
 .legend-quantity::after {
   content: url("../images/icons/modal-yellow-info.svg");
@@ -1632,7 +1828,7 @@ button {
 }
 
 .legend-quantity:hover .legend-quantity-info,
-.legend-quantity:focus .legend-quantity-info{
+.legend-quantity:focus .legend-quantity-info {
   display: block;
 }
 
@@ -1641,14 +1837,14 @@ button {
   z-index: 1;
   padding: 19px 17px 0 19px;
   background: #000000;
-  top: 42px;
-  left: 0;
+  top: 36px;
+  left: 2px;
   display: none;
 }
 
 .legend-quantity-info::before {
   position: absolute;
-  top: -20px;
+  top: -15px;
   right: 62px;
   content: url("../images/icons/popover-triangle.svg");
 }
@@ -1656,12 +1852,21 @@ button {
 .legend-quantity-info-p {
   display: block;
   width: 164px;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #fff;
+  color: #ffffff;
   margin-top: 0;
   margin-bottom: 19px;
+}
+
+.quantity-field-container {
+  display: flex;
+}
+
+.fieldset-quantity:invalid .quantity-field-container {
+  outline: solid 2px #ff3d3d;
 }
 
 .legend-button-minus {
@@ -1671,35 +1876,38 @@ button {
   height: 60px;
   padding: 0;
   border: none;
-  background: #F0F0F0;
+  background: #f0f0f0;
   cursor: pointer;
-  }
+}
 
 .legend-button-minus::before {
   position: absolute;
   width: 16px;
   height: 2px;
-  background-color: #000;
+  background-color: #000000;
   content: "";
   top: 29px;
   left: 22px;
-  }
+}
 
 .quantity-input-numbers {
   width: 60px;
   height: 60px;
   border: none;
-  background: #F0F0F0;
+  background: #f0f0f0;
   text-align: center;
   appearance: textfield;
   padding: 0;
-  }
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
 
 .quantity-input-numbers::-webkit-outer-spin-button,
 .quantity-input-numbers::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
-  }
+}
 
 .legend-button-plus {
   position: relative;
@@ -1708,35 +1916,35 @@ button {
   height: 60px;
   padding: 0;
   border: none;
-  background: #F0F0F0;
+  background: #f0f0f0;
   cursor: pointer;
-  }
+}
 
 .legend-button-plus::before {
   position: absolute;
   width: 16px;
   height: 2px;
-  background-color: #000;
+  background-color: #000000;
   content: "";
   top: 29px;
   left: 22px;
-  }
+}
 
 .legend-button-plus::after {
   position: absolute;
   width: 16px;
   height: 2px;
-  background-color: #000;
+  background-color: #000000;
   content: "";
   top: 29px;
   left: 22px;
   transform: rotate(90deg);
-  }
+}
 
 /* Стилизация кнопки "отправить" */
 .modal-button-send {
   position: relative;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.2em;
@@ -1745,37 +1953,37 @@ button {
   width: 200px;
   height: 40px;
   margin: 0;
-  padding: 0;
+  padding-left: 10px;
   overflow: hidden;
   z-index: 0;
   background: none;
   border: none;
-  }
+}
 
 .modal-button-send::before {
   position: absolute;
   content: "";
   width: 200px;
   height: 8px;
-  background-color: #FFE17F;
-  left: 0px;
+  background-color: #ffe17f;
+  left: 0;
   top: 15px;
   z-index: -1;
-  }
+}
 
 .modal-button-send:hover::before {
   transform: scale(10);
   transition: 0.5s;
-  }
+}
 
 .modal-button-send:active::before {
-  background: #FFC700;
+  background: #ffc700;
   transition: none;
-  }
+}
 
 .modal-button-send:disabled {
   opacity: 0.3;
-  }
+}
 
 /* Хлебные крошки */
 .catalog-breadcrumbs-container {
@@ -1787,11 +1995,11 @@ button {
 }
 
 .breadcrumbs-title {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 50px;
   line-height: 50px;
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 11px;
   padding-left: 60px;
 }
 
@@ -1800,7 +2008,7 @@ button {
   flex-wrap: wrap;
   list-style: none;
   margin: 0;
-  margin-bottom: 34px;
+  margin-bottom: 29px;
   padding: 0;
   padding-left: 60px;
 }
@@ -1833,7 +2041,7 @@ button {
 .main-catalog {
   position: relative;
   flex-grow: 1;
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
   margin: 0;
   z-index: 0;
 }
@@ -1852,62 +2060,62 @@ button {
 }
 
 .aside-title {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 58px;
   padding-top: 25px;
-  }
+  padding-left: 2px;
+}
 
 .aside-filter-panel {
-  width: 260px;
-  padding-left: 60px;
+  width: 262px;
 }
 
 .catalog-filter-group {
   border: none;
   padding: 0;
-  margin-bottom: 35px;
+}
+
+.group-price {
+  margin-bottom: 34px;
 }
 
 .catalog-filter-title {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
   letter-spacing: -0.02em;
-
   width: 200px;
   border-top: solid 2px;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   padding-top: 12px;
   padding-left: 0;
-
 }
 
 .range-scale {
   position: relative;
   width: 200px;
   height: 2px;
-  margin-bottom: 16px;
-  background-color: #DCDCDC;
-
+  margin-bottom: 12px;
+  background-color: #dcdcdc;
 }
 
 .range-bar {
   position: absolute;
   height: 2px;
-  background-color: #000;
+  background-color: #000000;
 }
 
 .range-toggle {
   position: absolute;
   width: 20px;
   height: 20px;
-  background: #EBEBEB;
+  background: #ebebeb;
   border: 2px solid #242424;
   border-radius: 50%;
   cursor: pointer;
@@ -1940,27 +2148,31 @@ button {
 
 .catalog-filter-label {
   color: rgba(00, 00, 00, 0.3);
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .catalog-filter-label:first-child {
   display: flex;
-  width: 30px;
-  margin-right: 75px;
+  width: 53px;
+  margin-right: 52px;
 }
 
 .catalog-filter-label:focus-within {
-  outline: solid 2px #AF4FFF;
+  outline: solid 2px #af4fff;
 }
 
 .range-input {
-  width: 30px;
-  padding: 0 2px;
+  width: 15px;
+  padding: 0;
   text-align: center;
   font: inherit;
   background-color: transparent;
   border: none;
   appearance: textfield;
   color: rgba(00, 00, 00, 0.3);
+  outline: none;
 }
 
 .range-input::-webkit-outer-spin-button,
@@ -1970,15 +2182,33 @@ button {
 }
 
 /* Блок "Цвет" */
+.group-color {
+  margin-bottom: 28px;
+}
+
 .control {
   position: relative;
   display: block;
   padding-left: 36px;
-  height: 20px;
+}
+
+.control-mark-focus {
+  position: absolute;
+  content: "";
+  width: 24px;
+  height: 24px;
+  outline: solid 2px transparent;
+  top: 3px;
+  left: -1px;
+  margin: 0;
+}
+
+.control:focus-within .control-mark-focus {
+  outline: #af4fff solid 2px;
 }
 
 .control-label {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1987,15 +2217,16 @@ button {
 
 .control-mark {
   position: absolute;
-  top: 3px;
+  content: "";
+  top: 4px;
   left: 0;
-  width: 20px;
-  height: 20px;
-  border: 2px solid #CCCCCC;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #cccccc;
   border-radius: 3px;
 }
 
-.control:hover  {
+.control:hover {
   opacity: 0.6;
 }
 
@@ -2004,16 +2235,29 @@ button {
 }
 
 .control-input[type="checkbox"]:checked + .control-mark {
-  border: 2px solid #000;
+  border: 2px solid #000000;
 }
 
 .control-input[type="checkbox"]:checked + .control-mark::before {
   position: absolute;
   content: url("../images/icons/black-check-mark.svg");
-  top: -5px;
+  top: -6px;
   left: 5px;
   width: 10px;
   height: 10px;
+}
+
+.catalog-filter-title-color {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  width: 200px;
+  border-top: solid 2px;
+  margin-bottom: 15px;
+  padding-top: 12px;
+  padding-left: 0;
 }
 
 .catalog-filter-list {
@@ -2022,15 +2266,47 @@ button {
   margin: 0;
 }
 
+.color-item {
+  display: flex;
+  align-items: center;
+}
+
 .color-item:not(:last-child) {
-  margin-bottom: 17px;
+  margin-bottom: 7px;
 }
 
 /* Блок "Bluetooth" */
+.bluetooth-item {
+  display: flex;
+  align-items: center;
+}
+
+.bluetooth-control:focus-within .control-mark-focus {
+  outline: #af4fff solid 2px;
+}
+
+.group-bluetooth {
+  margin-bottom: 20px;
+}
+
+.catalog-filter-title-bluetooth {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  width: 200px;
+  border-top: solid 2px;
+  padding-top: 12px;
+  padding-left: 0;
+  margin-bottom: 16px;
+}
+
 .bluetooth-control {
   position: relative;
   display: block;
   padding-left: 36px;
+  margin-bottom: 10px;
 }
 
 .bluetooth-control-mark {
@@ -2039,7 +2315,7 @@ button {
   left: 0;
   width: 18px;
   height: 18px;
-  background-color: #EBEBEB;
+  background-color: #ebebeb;
   border: 2px solid #000000;
   border-radius: 50%;
 }
@@ -2068,13 +2344,13 @@ button {
 
 /* Кнопка применения фильтров */
 .aside-button {
-  margin-right: 60px;
+  margin-right: 34px;
   text-align: center;
-  }
+}
 
-  .aside-button-show {
+.aside-button-show {
   position: relative;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.2em;
@@ -2086,71 +2362,76 @@ button {
   padding: 0;
   overflow: hidden;
   z-index: 0;
-  }
+}
 
-  .aside-button-show::before {
+.aside-button-show::before {
   position: absolute;
   content: "";
   width: 220px;
   height: 8px;
-  background-color: #FFE17F;;
-  left: 0px;
+  background-color: #ffe17f;
+  left: 0;
   top: 15px;
   z-index: -1;
-  }
+}
 
-  .aside-button-show:hover::before {
+.aside-button-show:hover::before {
   transform: scale(10);
   transition: 0.5s;
-  }
+}
 
-  .aside-button-show:active::before {
-  background: #FFC700;
+.aside-button-show:active::before {
+  background: #ffc700;
   transition: none;
-  }
+}
 
-  .aside-button-show:disabled {
+.aside-button-show:disabled {
   opacity: 0.3;
-  }
+}
 
 /* Контейнер-блок товаров */
 .main-goods {
   display: flex;
   flex-direction: column;
   width: 840px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 /* Блок сортировки над списком товаров */
 .goods-sorting {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   align-items: center;
-  height: 70px;
+  min-height: 70px;
   padding-left: 40px;
-  padding-right: 40px;
-  background: #F0F0F0;
+  background: #f0f0f0;
   margin-bottom: 70px;
 }
 
 .goods-sorting-title {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   margin: 0;
+  margin-right: 199px;
 }
 
 .goods-sorting-select {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
   background: none;
   border: none;
-  padding-right: 12px;
+  padding-right: 8px;
+  max-width: 141px;
+}
+
+.goods-sorting-form {
+  margin-right: 213px;
 }
 
 .goods-sorting-select:hover {
@@ -2196,10 +2477,10 @@ button {
 /* Список товаров */
 .goods-list {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: repeat(auto-fill, 360px);
   row-gap: 44px;
   column-gap: 40px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   margin: 0;
   margin-bottom: 44px;
   margin-right: 40px;
@@ -2212,7 +2493,7 @@ button {
 }
 
 .goods-item:focus-within {
-  outline: solid 2px #AF4FFF;
+  outline: solid 2px #af4fff;
 }
 
 .goods-item-container {
@@ -2234,7 +2515,7 @@ button {
 }
 
 .goods-item-title {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -2243,6 +2524,9 @@ button {
 }
 
 .goods-item-price {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
   margin: 0;
 }
 
@@ -2252,7 +2536,7 @@ button {
   height: 40px;
   grid-area: 1 / 1 / 2 / 2;
   top: 170px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
@@ -2272,8 +2556,8 @@ button {
   content: "";
   width: 220px;
   height: 8px;
-  background-color: #FFE17F;;
-  left: 0px;
+  background-color: #ffe17f;
+  left: 0;
   top: 15px;
   z-index: -1;
 }
@@ -2284,7 +2568,7 @@ button {
 }
 
 .goods-item-button:active::before {
-  background: #FFC700;
+  background: #ffc700;
   transition: none;
 }
 
@@ -2304,19 +2588,19 @@ button {
 
 /* Кнопка "Загрузить ещё" */
 .more-goods-button {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 16px;
   line-height: 19px;
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   width: 760px;
   height: 55px;
   margin: auto;
-  margin-bottom: 44PX;
+  margin-bottom: 44px;
   border: solid 3px;
-  border-color: #E5E5E5;
+  border-color: #e5e5e5;
 }
 
 .more-goods-button:hover {
@@ -2329,7 +2613,7 @@ button {
 }
 
 .more-goods-button:disabled {
-  border: 3px solid #E5E5E5;
+  border: 3px solid #e5e5e5;
   opacity: 0.3;
 }
 
@@ -2338,7 +2622,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color:  #EBEBEB;
+  background-color: #ebebeb;
   margin: auto;
   width: 760px;
   height: 71px;
@@ -2347,18 +2631,19 @@ button {
 /* Стили кнопок "Назад, Вперед" в покое */
 .goods-navigation-button {
   padding: 25px;
-  font-family: 'Raleway', sans-serif;
+  padding-right: 21px;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   border: none;
-  background: #EBEBEB;;
+  background: #ebebeb;
 }
 
 .goods-navigation-button:hover {
- color: #000000;
- background: #DCDCDC;
+  color: #000000;
+  background: #dcdcdc;
 }
 
 .goods-navigation-button:active {
@@ -2369,7 +2654,7 @@ button {
 /* Стиль "текущей" страницы */
 .navigation-button-back {
   color: rgba(68, 68, 68, 0.3);
-  background: #EBEBEB;
+  background: #ebebeb;
   cursor: default;
 }
 
@@ -2377,19 +2662,19 @@ button {
 .goods-navigation-button-numbers {
   width: 40px;
   height: 40px;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: rgba(68, 68, 68, 0.3);
   border: none;
-  margin-right: 2px;
+  padding: 6px 6px;
 }
 
 .goods-navigation-button-numbers:last-child {
   margin-right: 0;
 }
 
-.goods-navigation-button-numbers:nth-child(1){
+.goods-navigation-button-numbers:nth-child(1) {
   color: rgba(68, 68, 68, 0.6);
 }
 
@@ -2410,7 +2695,7 @@ button {
 /* Выделение рамкой при фокусе TAB */
 /* Значение для браузеров по умолчанию */
 .focus-visible-outline:focus {
-  outline: solid 2px #AF4FFF;
+  outline: solid 2px #af4fff;
 }
 
 /* Улучшение через директиву @supports */
@@ -2423,7 +2708,7 @@ button {
 
   /* Задаём видимый фокус у элементов */
   .focus-visible-outline:focus-visible {
-    outline: solid 2px #AF4FFF;
+    outline: solid 2px #af4fff;
   }
 }
 
@@ -2432,20 +2717,19 @@ button {
   position: relative;
 }
 
-.navigation-button-item:hover .popover-container{
+.navigation-button-item:hover .popover-container {
   display: block;
 }
 
 .popover-container {
   position: absolute;
-  display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  background: #000;
-  color: #fff;
+  background: #000000;
+  color: #ffffff;
   width: 320px;
   z-index: 2;
-  right:-85px;
+  right: -80px;
   display: none;
 }
 
@@ -2478,15 +2762,15 @@ button {
 .a-li-popover {
   display: flex;
   text-decoration: none;
-  color: #fff;
-  font-family: 'Rubik', sans-serif;
+  color: #ffffff;
+  font-family: "Rubik", sans-serif;
   font-size: 16px;
   line-height: 20px;
   align-items: center;
 }
 
 .a-li-popover:focus-within {
-  outline: solid 2px #AF4FFF;
+  outline: solid 2px #af4fff;
 }
 
 .li-popover-monopod-01 {
@@ -2525,7 +2809,7 @@ button {
 
 .close-product-button:focus {
   border: 2px solid transparent;
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
 }
 
 .popover-product-img {
@@ -2537,14 +2821,14 @@ button {
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  background: #1A1A1A;
+  background: #1a1a1a;
   height: 44px;
 }
 
 .p-popover-quantity {
   display: inline-block;
   width: 120px;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 16px;
   line-height: 20px;
 }
@@ -2553,7 +2837,7 @@ button {
   display: inline-block;
   width: 150px;
   text-align: end;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 16px;
   line-height: 20px;
 }
@@ -2567,9 +2851,9 @@ button {
   width: 280px;
   height: 50px;
   border: solid 2px transparent;
-  background: #fff;
-  color: #000;
-  font-family: 'Raleway', sans-serif;
+  background: #ffffff;
+  color: #000000;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.2em;
@@ -2577,7 +2861,7 @@ button {
 }
 
 .popover-open-cart-button:hover {
-  background: #FFE17F;
+  background: #ffe17f;
 }
 
 .popover-open-cart-button:active {
@@ -2586,5 +2870,5 @@ button {
 
 .popover-open-cart-button:focus {
   border: 2px solid transparent;
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
 }
