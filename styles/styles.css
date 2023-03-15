@@ -1111,7 +1111,6 @@ max-height: 20px;
   transition: none;
 }
 
-
 .about-button:disabled {
   opacity: 0.3;
 }
@@ -1496,7 +1495,7 @@ max-height: 20px;
   padding: 0;
 }
 
-.section-phone-number {
+.container-phone-number {
   padding-top: 139px;
 }
 
