@@ -41,33 +41,32 @@
             </li>
             <li class="navigation-button-item"><button
                 class="navigation-links cart-navigation-button navigation-links-button focus-visible-outline"
-                type="button">
-                <img class="number-two-icon" src="/images/icons/cart-and-number.svg"
-                  alt="Иконка количества товаров в корзине.">Корзина</button>
+                type="button"><span class="cart-quantity">2</span>
+                <span class="cart-icon"></span>Корзина</button>
               <!--   Поповер -->
               <div class="popover-container">
-                <ul class="ul-popover-products">
-                  <li class="li-popover-product">
-                    <div class="li-popover-monopod-01"><a class="a-li-popover" href="#"><img class="popover-product-img"
-                          src="../images/goods/popover-monopod-01.jpg" width="39" height="43"
-                          alt="Иконка любительской селфи-палки.">
+                <ul class="list-popover-products">
+                  <li class="item-popover-product">
+                    <div class="item-popover-monopod-01"><a class="link-item-popover" href="#"><img
+                          class="popover-product-img" src="../images/goods/popover-monopod-01.jpg" width="39"
+                          height="43" alt="Иконка любительской селфи-палки.">
                         Любительская <br>селфи-палка
                       </a>
                     </div>
                     <button class="close-product-button"></button>
                   </li>
-                  <li class="li-popover-product">
-                    <div class="li-popover-monopod-02"><a class="a-li-popover" href="#"><img class="popover-product-img"
-                          src="../images/goods/popover-monopod-02.jpg" width="39" height="43"
-                          alt="Иконка профессиональньной селфи-палки.">
+                  <li class="item-popover-product">
+                    <div class="item-popover-monopod-02"><a class="link-item-popover" href="#"><img
+                          class="popover-product-img" src="../images/goods/popover-monopod-02.jpg" width="39"
+                          height="43" alt="Иконка профессиональньной селфи-палки.">
                         Профессиональная <br>селфи-палка</a>
-                      <button class="close-product-button"></button>
                     </div>
+                    <button class="close-product-button"></button>
                   </li>
                 </ul>
-                <div class="popover-cart-info">
-                  <p class="p-popover-quantity">Товаров: <span class="popover-quantity-span">2</span></p>
-                  <p class="p-popover-price">Сумма: <span class="popover-price-span">2000</span> ₽</p>
+                <div class="popover-cart-information">
+                  <p class="title-popover-quantity">Товаров: <span class="popover-quantity-text">2</span></p>
+                  <p class="title-popover-price">Сумма: <span class="popover-price-text">2000</span> ₽</p>
                 </div>
                 <div class="popover-open-cart-button-container">
                   <button class="popover-open-cart-button" type="button">Открыть корзину</button>
@@ -92,7 +91,7 @@
                         href="#">Виртуальная
                         реальность</a></li>
                     <li class="dropdown-column-item"><a class="navigation-dropdown-link focus-visible-outline"
-                        href="/catalog.html">Моноподы для
+                        href="catalog.html">Моноподы для
                         селфи</a></li>
                     <li class="dropdown-column-item"><a class="navigation-dropdown-link focus-visible-outline"
                         href="#">Экшн-камеры</a></li>
@@ -106,9 +105,10 @@
                         href="#">Умные часы</a></li>
                   </ul>
                 </li>
-                <li class="navigation-dropdown-item focus-visible-outline">
+                <li class="navigation-dropdown-item">
                   <ul class="navigation-dropdown-column">
-                    <li class="dropdown-column-item"><a class="navigation-dropdown-link" href="#">Квадракоптеры</a></li>
+                    <li class="dropdown-column-item"><a class="navigation-dropdown-link focus-visible-outline"
+                        href="#">Квадракоптеры</a></li>
                   </ul>
                 </li>
               </ul>
@@ -136,10 +136,10 @@
         <!-- Баннеры товаров -->
         <ol class="banner-list">
           <!-- Баннер товара 01 -->
-          <li class="banner-item-container active">
+          <li class="banner-item-container active-banner">
             <div class="banner-item-content">
-              <img class="item-01-img" src="images/banners/banner-quadcopter.png" width="560" height="560"
-                alt="Квадракоптер.">
+              <img class="item-banner-quadcopter-img" src="images/banners/banner-quadcopter.png" width="560"
+                height="560" alt="Квадракоптер.">
             </div>
             <div class="banner-item-text-container">
               <span class="item-number">01</span>
@@ -150,27 +150,27 @@
                 <button class="banner-more-button clear-button focus-visible-outline" type="button">Подробнее</button>
                 <div class="banner-text-details-container">
                   <p class="banner-text-details"><b class="banner-text-bold">800 м</b><span
-                      class="banner-text-sapn">Дальность полета</span></p>
+                      class="banner-text-small">Дальность полета</span></p>
                   <p class="banner-text-details"><b class="banner-text-bold">50 м </b><span
-                      class="banner-text-sapn">Радиус поражения</span></p>
+                      class="banner-text-small">Радиус поражения</span></p>
                 </div>
               </div>
             </div>
             <!-- Нижние кнопки навигации баннера 01        -->
             <div class="banner-bottom-buttons-container">
-              <button class="banner-nav-button clear-button focus-visible-outline" type="button">
+              <button class="banner-navigation-button clear-button focus-visible-outline" type="button">
                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 12 12">
                   <circle cx="6" cy="6" r="5" fill="#000" stroke="#000" stroke-width="2" />
                 </svg>
                 <span class="visually-hidden">Баннер 01.</span>
               </button>
-              <button class="banner-nav-button clear-button focus-visible-outline" type="button">
+              <button class="banner-navigation-button clear-button focus-visible-outline" type="button">
                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 12 12">
                   <circle cx="6" cy="6" r="5" fill="#fff" stroke="#000" stroke-width="2" />
                 </svg>
                 <span class="visually-hidden">Баннер 02.</span>
               </button>
-              <button class="banner-nav-button clear-button focus-visible-outline" type="button">
+              <button class="banner-navigation-button clear-button focus-visible-outline" type="button">
                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 12 12">
                   <circle cx="6" cy="6" r="5" fill="#fff" stroke="#000" stroke-width="2" />
                 </svg>
@@ -196,8 +196,8 @@
           <!-- Баннер товара 02 -->
           <li class="banner-item-container">
             <div class="banner-item-content">
-              <img class="item-02-img" src="images/banners/banner-fitness-bracelet.png" width="560" height="560"
-                alt="Фитнес-браслет.">
+              <img class="item-banner-fitness-bracelet-img" src="images/banners/banner-fitness-bracelet.png" width="560"
+                height="560" alt="Фитнес-браслет.">
             </div>
             <div class="banner-item-text-container">
               <span class="item-number">02</span>
@@ -207,24 +207,24 @@
               <button class="banner-more-button clear-button focus-visible-outline" type="button">Подробнее</button>
               <div class="banner-text-details-container">
                 <p class="banner-text-details"><b class="banner-text-bold">48 часов</b><span
-                    class="banner-text-sapn">Без подзарядки</span></p>
+                    class="banner-text-small">Без подзарядки</span></p>
               </div>
             </div>
             <!-- Нижнии кнопки навигации баннера 02        -->
             <div class="banner-bottom-buttons-container">
-              <button class="banner-nav-button clear-button focus-visible-outline" type="button">
+              <button class="banner-navigation-button clear-button focus-visible-outline" type="button">
                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 12 12">
                   <circle cx="6" cy="6" r="5" fill="#fff" stroke="#000" stroke-width="2" />
                 </svg>
                 <span class="visually-hidden">Баннер 01.</span>
               </button>
-              <button class="banner-nav-button clear-button focus-visible-outline" type="button">
+              <button class="banner-navigation-button clear-button focus-visible-outline" type="button">
                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 12 12">
                   <circle cx="6" cy="6" r="5" fill="#000" stroke="#000" stroke-width="2" />
                 </svg>
                 <span class="visually-hidden">Баннер 02.</span>
               </button>
-              <button class="banner-nav-button clear-button focus-visible-outline" type="button">
+              <button class="banner-navigation-button clear-button focus-visible-outline" type="button">
                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 12 12">
                   <circle cx="6" cy="6" r="5" fill="#fff" stroke="#000" stroke-width="2" />
                 </svg>
@@ -250,7 +250,7 @@
           <!-- Баннер товара 03        -->
           <li class="banner-item-container">
             <div class="banner-item-content">
-              <img class="item-03-img" src="images/banners/banner-monopod.png" width="560" height="560"
+              <img class="item-banner-monopod-img" src="images/banners/banner-monopod.png" width="560" height="560"
                 alt="Селфи-палка.">
             </div>
             <div class="banner-item-text-container">
@@ -260,32 +260,32 @@
                 метров длиной и весом всего 5 кг.</p>
               <button class="banner-more-button clear-button focus-visible-outline" type="button">Подробнее</button>
               <div class="banner-text-details-container">
-                <p class="banner-text-details banner-text-details-item-03"><b class="banner-text-bold">8,5 м</b><span
-                    class="banner-text-sapn">Длина палки</span>
+                <p class="banner-text-details banner-text-details-item-monopod"><b class="banner-text-bold">8,5
+                    м</b><span class="banner-text-small">Длина палки</span>
                 </p>
-                <p class="banner-text-details banner-text-details-item-03"><b class="banner-text-bold">5 кг</b><span
-                    class="banner-text-sapn">Вес палки</span>
+                <p class="banner-text-details banner-text-details-item-monopod"><b class="banner-text-bold">5
+                    кг</b><span class="banner-text-small">Вес палки</span>
                 </p>
-                <p class="banner-text-details banner-text-details-item-03"><b class="banner-text-bold">Карбон</b><span
-                    class="banner-text-sapn">Материал</span>
+                <p class="banner-text-details banner-text-details-item-monopod"><b
+                    class="banner-text-bold">Карбон</b><span class="banner-text-small">Материал</span>
                 </p>
               </div>
             </div>
             <!-- Нижнии кнопки навигации баннера 03        -->
             <div class="banner-bottom-buttons-container">
-              <button class="banner-nav-button clear-button focus-visible-outline" type="button">
+              <button class="banner-navigation-button clear-button focus-visible-outline" type="button">
                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 12 12">
                   <circle cx="6" cy="6" r="5" fill="#fff" stroke="#000" stroke-width="2" />
                 </svg>
                 <span class="visually-hidden">Баннер 01.</span>
               </button>
-              <button class="banner-nav-button clear-button focus-visible-outline" type="button">
+              <button class="banner-navigation-button clear-button focus-visible-outline" type="button">
                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 12 12">
                   <circle cx="6" cy="6" r="5" fill="#fff" stroke="#000" stroke-width="2" />
                 </svg>
                 <span class="visually-hidden">Баннер 02.</span>
               </button>
-              <button class="banner-nav-button clear-button focus-visible-outline" type="button">
+              <button class="banner-navigation-button clear-button focus-visible-outline" type="button">
                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 12 12">
                   <circle cx="6" cy="6" r="5" fill="#000" stroke="#000" stroke-width="2" />
                 </svg>
@@ -335,7 +335,7 @@
             </a>
           </li>
           <li class="category-item">
-            <a class="category-item-link" href="/catalog.html">
+            <a class="category-item-link" href="catalog.html">
               <div class="category-item-img-container category-item-img-container-monopod">
                 <svg xmlns="http://www.w3.org/2000/svg" width="87" height="117" fill="none" viewBox="0 0 87 117">
                   <path fill="#363636"
@@ -404,7 +404,7 @@
           <h2 class="visually-hidden">Приемущества.</h2>
           <ol class="advantage-list">
             <!-- Приемущество доставки -->
-            <li class="advantage-item active">
+            <li class="advantage-item active-advantage">
               <ol class="advantage-button-list">
                 <li class="advantage-button-item active-advantage-button-item">
                   <button class="advantage-active-button" type="button" disabled>Доставка</button>
@@ -488,7 +488,7 @@
             </svg>
           </span>
           <span class="special-delivery-text">Доставим редкий товар под заказ</span>
-          <span class="special-delivery-info-img">
+          <span class="special-delivery-information-img">
             <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="20.5" cy="20" r="20" fill="#DCDCDC" fill-opacity="0.5" />
               <g clip-path="url(#clip0_481_28)">
@@ -505,7 +505,7 @@
         </button>
       </section>
       <!-- Общий блок "О нас" и "Контакты" -->
-      <section class="info">
+      <section class="section-information">
         <h2 class="visually-hidden">Информация о доставке и контактах.</h2>
         <!-- Блок "О нас" -->
         <section class="about">
@@ -538,21 +538,21 @@
         </section>
       </section>
       <!-- Блок подписки на рассылку -->
-      <div class="subs-container">
-        <section class="subs">
+      <div class="subscription-container">
+        <section class="subscription">
           <div class="subs-top-container">
-            <h2 class="subs-title">Подпишитесь на рассылку</h2>
-            <p class="subs-text subs-text-about">Еженедельный дайджест с обзорами новинок,
+            <h2 class="subscription-title">Подпишитесь на рассылку</h2>
+            <p class="subscription-text subscription-text-about">Еженедельный дайджест с обзорами новинок,
               <br>длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
             </p>
           </div>
           <!-- Форма подписки на рассылку -->
-          <div class="subs-bottom-container">
-            <form class="subs-form" action="https://echo.htmlacademy.ru/" method="post">
-              <input class="subs-input" type="email" placeholder="Ваш e-mail" name="email">
-              <button class="subs-button focus-visible-outline" type="submit">Подписаться</button>
+          <div class="subscription-bottom-container">
+            <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+              <input class="subscription-input" type="email" placeholder="Ваш e-mail" name="email">
+              <button class="subscription-button focus-visible-outline" type="submit">Подписаться</button>
             </form>
-            <p class="subs-text subs-bottom-text">Это бесплатно</p>
+            <p class="subscription-text subs-bottom-text">Это бесплатно</p>
           </div>
         </section>
       </div>
@@ -573,13 +573,15 @@
         <section class="footer-social">
           <h2 class="visually-hidden">Информация о доставке, гарантии и контактах.</h2>
           <!-- Блок ссылок информации в футере -->
-          <ul class="footer-info">
-            <li class="footer-info-item"><a class="footer-info-link info-link-delivery focus-visible-outline"
-                href="#">Доставка</a></li>
-            <li class="footer-info-item"><a class="footer-info-link info-link-warranty
+          <ul class="footer-information">
+            <li class="footer-information-item"><a
+                class="footer-information-link information-link-delivery focus-visible-outline" href="#">Доставка</a>
+            </li>
+            <li class="footer-information-item"><a class="footer-information-link information-link-warranty
               focus-visible-outline" href="#">Гарантия</a></li>
-            <li class="footer-info-item"><a class="footer-info-link info-link-contacts focus-visible-outline"
-                href="#">Контакты</a></li>
+            <li class="footer-information-item"><a
+                class="footer-information-link information-link-contacts focus-visible-outline" href="#">Контакты</a>
+            </li>
           </ul>
           <!-- Блок социальных сетей в футере -->
           <h2 class="visually-hidden">Социальные сети.</h2>
@@ -638,10 +640,11 @@
           </ul>
         </section>
         <!-- Блок телефона и логотипа академии в футере -->
-        <section class="tel">
+        <section class="section-phone-number">
           <h2 class="visually-hidden">Телефон магазина.</h2>
-          <address class="footer-tel">
-            <a class="footer-tel-link focus-visible-outline" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+          <address class="footer-phone-number">
+            <a class="footer-phone-number-link focus-visible-outline" href="tel:+78128121212">Тел.: +7 (812)
+              812-12-12</a>
           </address>
           <p class="footer-logo-academy"><a class="footer-link-academy focus-visible-outline"
               href="https://htmlacademy.ru/">
@@ -671,30 +674,31 @@
               <!-- Контейнер имени и e-mail -->
               <div class="modal-form-name-email">
                 <!-- Поле "имя" -->
-                <fieldset class="fieldset-name">
-                  <legend class="legend-name">Ваше имя:</legend>
-                  <input class="input-name-text" type="text" placeholder="Введите ваше имя" name="name">
-                  <p class="input-name-p">Добавьте имя</p>
+                <fieldset class="field-name">
+                  <legend class="field-name-legend">Ваше имя:</legend>
+                  <input class="field-name-input-text" type="text" placeholder="Введите ваше имя" name="name">
+                  <p class="field-name-input-description">Добавьте имя</p>
                 </fieldset>
                 <!-- Поле "e-mail" -->
-                <fieldset class="fieldset-email">
-                  <legend class="legend-email">Ваш e-mail:</legend>
-                  <input class="input-email" type="email" placeholder="Введите e-mail" name="e-mail">
-                  <p class="input-email-p">Забавный у вас адрес</p>
+                <fieldset class="field-email">
+                  <legend class="field-email-legend">Ваш e-mail:</legend>
+                  <input class="field-email-input-text" type="email" placeholder="Введите e-mail" name="e-mail">
+                  <p class="field-email-input-description">Забавный у вас адрес</p>
                 </fieldset>
               </div>
               <!-- Контейнер "что привезти" и количество -->
               <div class="modal-bring-quantity">
                 <!-- Поле "привезти" -->
-                <fieldset class="fieldset-bring">
-                  <legend class="legend-bring">Что нужно привезти:</legend>
-                  <input class="input-bring" type="text" placeholder="В свободной форме" name="bring-text">
+                <fieldset class="field-bring">
+                  <legend class="field-bring-legend">Что нужно привезти:</legend>
+                  <input class="field-bring-input-text" type="text" placeholder="В свободной форме" name="bring-text">
                 </fieldset>
                 <!-- Блок "количество" -->
-                <fieldset class="fieldset-quantity">
-                  <legend tabindex="0" class="legend-quantity">Количество:
-                    <span class="legend-quantity-info">
-                      <span class="legend-quantity-info-p">Постараемся найти, сколько нужно. Привезём сколько получится
+                <fieldset class="field-quantity">
+                  <legend tabindex="0" class="field-quantity-legend">Количество:
+                    <span class="legend-quantity-information">
+                      <span class="legend-quantity-information-text">Постараемся найти, сколько нужно. Привезём сколько
+                        получится
                         по
                         требованиям <br>к провозу багажа.</span>
                     </span>
@@ -707,7 +711,7 @@
                 </fieldset>
               </div>
               <!-- Кнопка "Отправить" -->
-              <button class="modal-button-send" type="submit">Отправить</button>
+              <button class="modal-button-send focus-visible-outline" type="submit">Отправить</button>
             </form>
           </div>
         </div>
